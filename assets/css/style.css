@@ -1,0 +1,493 @@
+:root {
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --card-bg: #1e1e1e;
+    --primary: #1a73e8;
+    --primary-dark: #0d47a1;
+    --success: #2e7d32;
+    --text-primary: #f5f5f5;
+    --text-secondary: #b3b3b3;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+
+    /* Category colors */
+    --piston-color: #1a73e8;
+    --airliner-color: #f57c00;
+    --business-color: #7b1fa2;
+    --helicopter-color: #2e7d32;
+
+    /* Info box colors */
+    --altitude-color: #ff9800;
+    --note-color: #3e89ec;
+    --tablet-color: #FF00FF;
+    --mcdu-color: #FFEA00;
+    --atc-color: #4caf50;
+    --list-even: #1e1e1e;
+    --list-odd: #414141b3;
+    --divider: #696969;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--darker-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 14px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.info-box div {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1;
+    justify-content: center;
+}
+
+.swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.altitude {
+    background: var(--altitude-color);
+}
+
+.note {
+    background: var(--note-color);
+}
+
+.tablet {
+    background: var(--tablet-color);
+}
+
+.mcdu {
+    background: var(--mcdu-color);
+}
+
+.atc {
+    background: var(--atc-color);
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    /* smaller text */
+    color: var(--text-primary);
+    margin: 25px 0;
+}
+
+.divider::after {
+    content: "";
+    flex: 1;
+    margin-left: 10px;
+    border-bottom: 1px solid var(--divider);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Search Box Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 20px 12px 45px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 2px 10px rgba(26, 115, 232, 0.3);
+}
+
+.categories {
+    margin-bottom: 40px;
+}
+
+.category-group {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    padding-left: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.category-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/* Color variations for each category */
+.category-link.piston .category-icon {
+    background: linear-gradient(to right, var(--piston-color), #0d47a1);
+}
+
+.category-link.airliner .category-icon {
+    background: linear-gradient(to right, var(--airliner-color), #b26a00);
+}
+
+.category-link.business .category-icon {
+    background: linear-gradient(to right, var(--business-color), #4a148c);
+}
+
+.category-link.helicopter .category-icon {
+    background: linear-gradient(to right, var(--helicopter-color), #1b5e20);
+}
+
+.category-info {
+    flex: 1;
+}
+
+.category-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.category-arrow {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.checklist-items {
+    max-height: 5000px;
+    /* Increased to prevent cutoff */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.checklist-items.collapsed {
+    max-height: 0;
+}
+
+.checklist {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.checklist:last-child {
+    border-bottom: none;
+}
+
+.checklist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    background-color: var(--primary);
+    margin: 0 -10px;
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+}
+
+.checklist-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.checklist-icon {
+    transition: var(--transition);
+}
+
+.checklist-content {
+    /* Removed fixed height to prevent cutoff */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-top: 15px;
+}
+
+.checklist-content.collapsed {
+    max-height: 0;
+    padding-top: 0;
+}
+
+.checklist-items ul {
+    list-style-type: none;
+    padding: 0 0 15px 0;
+}
+
+.checklist-items li {
+    margin-bottom: 8px;
+    padding: 12px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+/* Alternating background colors for list items */
+.checklist-items li:nth-child(even) {
+    background-color: var(--list-even);
+}
+
+.checklist-items li:nth-child(odd) {
+    background-color: var(--list-odd);
+}
+
+/* Remove list dots */
+.checklist-items li:before {
+    content: none;
+}
+
+/* Format for checklist items with left/right alignment */
+.checklist-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-left {
+    text-align: left;
+    flex: 1;
+}
+
+.item-right {
+    text-align: right;
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+/* Info box styles */
+.info-box {
+    display: block;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.altitude-box {
+    background-color: rgba(255, 152, 0, 0.15);
+    border: 1px solid var(--altitude-color);
+    color: var(--altitude-color);
+}
+
+.note-box {
+    background-color: rgba(255, 152, 0, 0.15);
+    border: 1px solid var(--note-color);
+    font-size: 1.1rem;
+    justify-content: center;
+}
+
+.tablet-box {
+    background-color: rgba(156, 39, 176, 0.15);
+    border-left: 1px solid var(--tablet-color);
+}
+
+.mcdu-box {
+    background-color: rgba(156, 39, 176, 0.15);
+    border-left: 2px solid var(--mcdu-color);
+
+}
+
+.atc-box {
+    background-color: rgba(76, 175, 80, 0.15);
+    border: 1px solid var(--atc-color);
+}
+
+.checklist-progress {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.completed .checklist-header {
+    background: linear-gradient(to right, var(--success), #1b5e20);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: var(--darker-bg);
+    border-radius: var(--border-radius);
+}
+
+.back-link {
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--text-primary);
+}
+
+.aircraft-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.checklist-status {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .category-box {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .category-link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .category-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .checklist-items li {
+        padding: 10px 12px;
+    }
+
+    .info-box {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+
+    .item-right {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+}

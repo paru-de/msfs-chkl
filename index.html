@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSFS Checklist Manager</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>MSFS Checklists</h1>
+            <p class="subtitle">A collection of checklists for simulator use only</p>
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search aircraft...">
+                </div>
+            </div>
+        </header>
+
+        <div class="categories">
+            <!-- Single Engine Piston Category 
+            <div class="category-group" data-category="piston">
+                <h2 class="category-title">Single Engine Piston</h2>
+                <div class="category-box">
+                    <a href="checklists/cessna172.html" class="category-link piston" data-name="cessna 172s skyhawk">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Cessna 172S Skyhawk</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-link piston" data-name="piper pa-28 cherokee">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Piper PA-28 Cherokee</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+-->
+            <!-- Airliner Category -->
+            <div class="category-group" data-category="airliner">
+                <h2 class="category-title">Airliners</h2>
+                <div class="category-box">
+
+
+                    <a href="checklists/fenix-airbus32X.html" class="category-link airliner"
+                        data-name="fenix airbus 319 320 321">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Airbus A32X (Fenix)</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="checklists/pmdg-77X.html" class="category-link airliner"
+                        data-name="pmdg boeing 77X 777-300ER 777-200 777-F">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>PMDG Boeing 77X</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business Jet Category 
+            <div class="category-group" data-category="business">
+                <h2 class="category-title">Business Jets</h2>
+                <div class="category-box">
+                    <a href="#" class="category-link business" data-name="cessna citation x">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Cessna Citation X</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-link business" data-name="bombardier learjet 75">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Bombardier Learjet 75</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+-->
+            <!-- Helicopter Category 
+            <div class="category-group" data-category="helicopter">
+                <h2 class="category-title">Helicopters</h2>
+                <div class="category-box">
+                    <a href="#" class="category-link helicopter" data-name="bell 407">
+                        <div class="category-icon">
+                            <i class="fas fa-helicopter"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Bell 407</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-link helicopter" data-name="airbus h135">
+                        <div class="category-icon">
+                            <i class="fas fa-helicopter"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Airbus H135</h3>
+                        </div>
+                        <div class="category-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>-->
+        </div>
+
+        <footer>
+            <p>MSFS Checklists | A collection of checklists for simulator use only
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple search functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const aircraftLinks = document.querySelectorAll('.category-link');
+            const categoryGroups = document.querySelectorAll('.category-group');
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase().trim();
+
+                // If search is empty, show all
+                if (searchTerm === '') {
+                    aircraftLinks.forEach(link => {
+                        link.style.display = 'flex';
+                    });
+                    categoryGroups.forEach(group => {
+                        group.style.display = 'block';
+                    });
+                    return;
+                }
+
+                // Filter aircraft
+                let hasVisibleAircraft = false;
+
+                aircraftLinks.forEach(link => {
+                    const aircraftName = link.getAttribute('data-name');
+
+                    if (aircraftName.includes(searchTerm)) {
+                        link.style.display = 'flex';
+                        hasVisibleAircraft = true;
+                    } else {
+                        link.style.display = 'none';
+                    }
+                });
+
+                // Show/hide category groups based on visible aircraft
+                categoryGroups.forEach(group => {
+                    const categoryAircraft = group.querySelectorAll('.category-link');
+                    let hasVisible = false;
+
+                    categoryAircraft.forEach(aircraft => {
+                        if (aircraft.style.display !== 'none') {
+                            hasVisible = true;
+                        }
+                    });
+
+                    group.style.display = hasVisible ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
