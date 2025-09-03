@@ -27,7 +27,7 @@ AdaptedFrom: https://example.com https://another.com
 - Ground Crew: ADVICE
 - APU: VERIFY ON
 - EXT POWER: OFF
-- <!--An item can also have an image, revealed on hover or click -->
+<!--An item can also have an image, revealed on hover or click -->
 - This item has an [image](../assets/img/example/example.png): HOVER
 
 <!--A divider helps with spacing out longer checklists-->

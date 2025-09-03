@@ -71,7 +71,7 @@ def replace_md_links_with_eye(text: str) -> str:
         core = url.split('?', 1)[0].split('#', 1)[0].lower()
         if core.endswith(IMAGE_EXTS):
             return (f'<span class="item-with-image">{label} '
-                    f'<span class="image-eye" data-img="{url}" title="{url}">👁</span></span>')
+                    f'<span class="image-eye" data-img="{url}">👁</span></span>')
         else:
             return f'<a href="{url}" target="_blank" class="adapted-link">{label}</a>'
 
