@@ -9,7 +9,7 @@ in the ../checklists directory.
 You still have to manually add your new checklist to the index page though.
 -->
 
-<!--Aircraft name and sources-->
+<!--Aircraft name and sources (up to 10 links, or none at all-->
 
 AircraftName:Jolly Good Plane
 AdaptedFrom: https://example.com https://another.com
@@ -28,7 +28,7 @@ AdaptedFrom: https://example.com https://another.com
 - APU: VERIFY ON
 - EXT POWER: OFF
 
-<!--A divider helps with spacing longer checklists-->
+<!--A divider helps with spacing out longer checklists-->
 
 ### Divider
 
