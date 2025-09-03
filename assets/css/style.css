@@ -132,6 +132,75 @@ h1 {
     margin-bottom: 20px;
 }
 
+.scroll-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.scroll-btn {
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-btn:hover {
+    background: #555;
+}
+
+.scroll-menu {
+    display: none;
+    /* hidden by default */
+    position: absolute;
+    bottom: 60px;
+    /* sits above button */
+    right: 0;
+    background: var(--card-bg);
+    border: 2px solid var(--list-odd);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 300px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scroll-menu::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.scroll-menu.open {
+    display: block;
+    /* visible when toggled */
+}
+
+.scroll-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+
+}
+
+.scroll-menu li:hover {
+    background: var(--list-odd);
+}
+
 /* Search Box Styles */
 .search-container {
     display: flex;

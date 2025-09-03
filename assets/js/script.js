@@ -33,7 +33,7 @@ function toggleChecklist(element) {
   }
 }
 
-// Initialize all checklists as expanded
+// Index menu
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.checklist-content').forEach(item => {
     item.classList.remove('collapsed');
@@ -42,5 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.checklist-icon').forEach(icon => {
     icon.classList.add('fa-chevron-up');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.scroll-container');
+  const btn = container.querySelector('.scroll-btn');
+  const menu = container.querySelector('.scroll-menu ul');
+  const titles = [...document.querySelectorAll('.checklist-title')];
+
+  titles.forEach((title, i) => {
+    const li = document.createElement('li');
+    li.textContent = title.textContent.trim() || `Section ${i + 1}`;
+    li.addEventListener('click', e => {
+      e.stopPropagation();
+      window.scrollTo({
+        top: title.offsetTop - 30,
+        behavior: 'smooth',
+      });
+      menu.parentElement.classList.remove('open');
+    });
+    menu.appendChild(li);
+  });
+
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    container.querySelector('.scroll-menu').classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => {
+    container.querySelector('.scroll-menu').classList.remove('open');
   });
 });
