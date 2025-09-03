@@ -225,7 +225,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - Altitude: SET MISSED
 - CHKL Landing: COMPLETE
 - (Altitude) 300ft
-- AP (when not auto-landing) OFF
+- AP (when not auto-landing): OFF
 - (Altitude) 30ft
 - Begin Flare: 2-3 DEGREES
 - (Altitude) 20ft
