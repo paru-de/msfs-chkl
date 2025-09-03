@@ -1,7 +1,7 @@
 <!--
 README
 
-This markdown file serves as example on how to format a checklist,
+This markdown file serves as an example on how to format a checklist,
 so that it can be successfully converted into html with the included py script.
 
 Drag and drop the md file onto the script, and a new html will be created
