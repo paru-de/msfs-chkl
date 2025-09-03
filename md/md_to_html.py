@@ -147,7 +147,7 @@ for line in lines:
         if current_category is not None:
             html += "</div></div>\n"
         current_category = line[2:].strip()
-        html += f'<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>{current_category}</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">\n'
+        html += f'<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>{current_category} </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">\n'
 
     # Checklist Section
     elif line.startswith("## "):
@@ -157,8 +157,8 @@ for line in lines:
         html += f'<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">{current_checklist}</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>\n'
 
     # Divider
-    elif line.lower().startswith("### divider:"):
-        divider_text = line[len("### divider:"):].strip()
+    elif line.lower().startswith("###"):
+        divider_text = line[len("###"):].strip()
         html += f'<div class="divider">{divider_text}</div>\n'
 
     # Info Box Items (robust)
@@ -185,7 +185,7 @@ if current_category is not None:
     html += "</div></div>\n"
 
 # Bottom nav
-html += f"""
+html += f"""<br>
 <div class="nav">
     <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
     <div class="aircraft-name">{aircraft_name}</div>
