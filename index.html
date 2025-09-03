@@ -22,6 +22,8 @@
                 <div class="search-box">
                     <i class="fas fa-search"></i>
                     <input type="text" id="searchInput" placeholder="Search aircraft...">
+                    <button id="clearSearch" class="clear-btn" aria-label="Clear search">&#10005;</button>
+
                 </div>
             </div>
         </header>
@@ -162,6 +164,22 @@
         // Simple search functionality
         document.addEventListener('DOMContentLoaded', function () {
             const searchInput = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearSearch');
+
+            // Show/hide the clear button dynamically
+            searchInput.addEventListener('input', function () {
+                clearBtn.style.display = this.value ? 'block' : 'none';
+            });
+
+            // Clear search when clicking the X
+            clearBtn.addEventListener('click', function () {
+                searchInput.value = '';
+                clearBtn.style.display = 'none';
+
+                // Reset all aircraft + categories
+                aircraftLinks.forEach(link => link.style.display = 'flex');
+                categoryGroups.forEach(group => group.style.display = 'block');
+            });
             const aircraftLinks = document.querySelectorAll('.category-link');
             const categoryGroups = document.querySelectorAll('.category-group');
 
