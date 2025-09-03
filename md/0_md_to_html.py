@@ -54,6 +54,31 @@ html_file = output_dir / md_file.with_suffix(".html").name
 print(f"HTML will be written to: {html_file}")
 
 # ----------------------------------------------------
+# Helpers: convert markdown links -> eye for images, anchors for others
+# ----------------------------------------------------
+IMAGE_EXTS = ('.jpg', '.jpeg', '.png', '.gif', '.webp', '.webm', '.bmp', '.svg', '.avif')
+
+def replace_md_links_with_eye(text: str) -> str:
+    """
+    Replace [label](url) with:
+      - image preview eye if url points to an image type
+      - a normal anchor (target=_blank) otherwise
+    Works anywhere in the text (left or right side, or info-box content).
+    """
+    def _repl(m: re.Match) -> str:
+        label = m.group(1)
+        url = m.group(2)
+        core = url.split('?', 1)[0].split('#', 1)[0].lower()
+        if core.endswith(IMAGE_EXTS):
+            return (f'<span class="item-with-image">{label} '
+                    f'<span class="image-eye" data-img="{url}" title="{url}">👁</span></span>')
+        else:
+            return f'<a href="{url}" target="_blank" class="adapted-link">{label}</a>'
+
+    # Replace all markdown links in the string
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', _repl, text)
+
+# ----------------------------------------------------
 # Build AdaptedFrom HTML (number emojis + tooltips + class)
 # ----------------------------------------------------
 adapted_from_html = ""
@@ -64,13 +89,13 @@ if adapted_from_links:
         for i, url in enumerate(adapted_from_links)
         if i < len(number_emojis)  # limit to 10 links
     )
-    adapted_from_html = f'<div>Adapted from {links_html}</div>'
+    adapted_from_html = f'<div>{links_html}</div>'
 
 # ----------------------------------------------------
-# Flex container with swatches on left, adapted links on right
+# Info box + adapted links in a flex "metadata bar"
 # ----------------------------------------------------
 info_box_container_html = f"""
-<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+<div class="metadata-bar">
     <div class="info-box">
         <div><span class="swatch altitude"></span>Altitude</div>
         <div><span class="swatch note"></span>Notes</div>
@@ -98,9 +123,6 @@ html = f"""<!DOCTYPE html>
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
-
-
-
 </head>
 
 <body>
@@ -124,7 +146,7 @@ html = f"""<!DOCTYPE html>
       <div class="aircraft-name">{aircraft_name}</div>
   </div>
 
-  <!-- Info Box + AdaptedFrom flex container -->
+  <!-- Swatches + AdaptedFrom -->
   {info_box_container_html}
 
   <!-- Categories -->
@@ -134,8 +156,8 @@ html = f"""<!DOCTYPE html>
 # ----------------------------------------------------
 # Process markdown lines into checklist HTML
 # ----------------------------------------------------
-for line in lines:
-    line = line.strip()
+for raw_line in lines:
+    line = raw_line.strip()
     if not line:
         continue
 
@@ -147,34 +169,55 @@ for line in lines:
         if current_category is not None:
             html += "</div></div>\n"
         current_category = line[2:].strip()
-        html += f'<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>{current_category} </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">\n'
+        html += (f'<div class="category"><div class="category-header" onclick="toggleCategory(this)">'
+                 f'<span>{current_category}</span><i class="fas fa-chevron-down"></i></div>'
+                 f'<div class="checklist-items">\n')
+        continue
 
     # Checklist Section
-    elif line.startswith("## "):
+    if line.startswith("## "):
         if current_checklist is not None:
             html += "</ul></div></div>\n"
         current_checklist = line[3:].strip()
-        html += f'<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">{current_checklist}</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>\n'
+        html += (f'<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)">'
+                 f'<span class="checklist-title">{current_checklist}</span>'
+                 f'<i class="fas fa-chevron-down checklist-icon"></i></div>'
+                 f'<div class="checklist-content"><ul>\n')
+        continue
 
     # Divider
-    elif line.lower().startswith("###"):
-        divider_text = line[len("###"):].strip()
+    if line.lower().startswith("### "):
+        divider_text = line[len("### "):].strip()
         html += f'<div class="divider">{divider_text}</div>\n'
+        continue
 
-    # Info Box Items (robust)
-    elif line.startswith("- "):
+    # List items
+    if line.startswith("- "):
         content = line[2:].strip()
-        # Robust regex for Notes, ATC, Tablet, MCDU, Altitude
+
+        # Info Box Items (ATC/Note/Tablet/MCDU/Altitude)
         info_match = re.match(r'^\(\s*(ATC|Note|Tablet|MCDU|Altitude)\s*\)\s*(.+)', content, re.IGNORECASE)
         if info_match:
             box_type = info_match.group(1).lower() + "-box"
             box_content = info_match.group(2).strip()
+            box_content = replace_md_links_with_eye(box_content)
             html += f'<li class="info-box {box_type}">{box_content}</li>\n'
-        else:
-            parts = content.split(":", 1)
-            left = parts[0].strip()
-            right = parts[1].strip() if len(parts) > 1 else ""
-            html += f'<li><div class="checklist-item"><span class="item-left">{left}</span><span class="item-right">{right}</span></div></li>\n'
+            continue
+
+        # Standard checklist line: split into left/right on the first ":" (if any)
+        parts = content.split(":", 1)
+        left_raw = parts[0].strip()
+        right_raw = parts[1].strip() if len(parts) > 1 else ""
+
+        # Transform any markdown links in left/right (adds 👁 for image links)
+        left = replace_md_links_with_eye(left_raw)
+        right = replace_md_links_with_eye(right_raw) if right_raw else ""
+
+        html += (f'<li><div class="checklist-item">'
+                 f'<span class="item-left">{left}</span>'
+                 f'<span class="item-right">{right}</span>'
+                 f'</div></li>\n')
+        continue
 
 # ----------------------------------------------------
 # Close remaining checklist and category divs
@@ -184,16 +227,19 @@ if current_checklist is not None:
 if current_category is not None:
     html += "</div></div>\n"
 
-# Bottom nav
+# Bottom nav + tooltip root + scripts
 html += f"""<br>
 <div class="nav">
     <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
     <div class="aircraft-name">{aircraft_name}</div>
 </div>
-"""
 
-# Close HTML
-html += '\n<script src="../assets/js/script.js"></script>\n</body>\n</html>'
+<div class="image-tooltip" id="image-tooltip"></div>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
+"""
 
 # Write file
 html_file.write_text(html, encoding="utf-8")

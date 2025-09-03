@@ -10,7 +10,7 @@ I was tired of having to search and open PDF's all over the place, with inconsis
 
 These checklists don't aim to be exhaustive, nor are they intended for anything beyond casual simming. I'm not a pilot, and you will most likely find some egregious mistakes. They do however fulfill their purpose of getting me from A to B nicely. If you find mistakes, feel free to open an issue.
 
-**Disclaimer**: I'm not a hackerman, and most of the code in this repository was written by an LLM.
+**Disclaimer**: I'm not a hackerman, and most of the code in this repository was written by a LLM.
 
 ## Converting MD to html
 

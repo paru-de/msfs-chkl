@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
-
-
-
 </head>
 
 <body>
@@ -34,9 +31,9 @@
       <div class="aircraft-name">Jolly Good Plane</div>
   </div>
 
-  <!-- Info Box + AdaptedFrom flex container -->
+  <!-- Swatches + AdaptedFrom -->
   
-<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+<div class="metadata-bar">
     <div class="info-box">
         <div><span class="swatch altitude"></span>Altitude</div>
         <div><span class="swatch note"></span>Notes</div>
@@ -44,23 +41,24 @@
         <div><span class="swatch mcdu"></span>MCDU/FMC</div>
         <div><span class="swatch atc"></span>ATC</div>
     </div>
-    <div>Adapted from <a href="https://example.com" target="_blank" class="adapted-link" title="https://example.com">1️⃣</a> <a href="https://another.com" target="_blank" class="adapted-link" title="https://another.com">2️⃣</a></div>
+    <div><a href="https://example.com" target="_blank" class="adapted-link" title="https://example.com">1️⃣</a> <a href="https://another.com" target="_blank" class="adapted-link" title="https://another.com">2️⃣</a></div>
 </div>
 
 
   <!-- Categories -->
   <div class="categories">
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Category </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Category</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Checklist</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
 <li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
 <li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">This item has an <span class="item-with-image">image <span class="image-eye" data-img="../assets/img/example/example.png" title="../assets/img/example/example.png">👁</span></span></span><span class="item-right">HOVER</span></div></li>
 <div class="divider">Divider</div>
 <li class="info-box atc-box">Request Push and Engine Start</li>
 <li class="info-box altitude-box">FL100</li>
 <li class="info-box mcdu-box">DEP/ARR → Set RWY → Set SID/TRANS → EXEC</li>
 <li class="info-box tablet-box">Import Simbrief route & weather</li>
-<li class="info-box note-box">Start Boarding & Refueling</li>
+<li class="info-box note-box">Start Boarding & <span class="item-with-image">Refueling <span class="image-eye" data-img="../assets/img/example/example.png" title="../assets/img/example/example.png">👁</span></span></li>
 </ul></div></div>
 </div></div>
 <br>
@@ -68,6 +66,8 @@
     <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
     <div class="aircraft-name">Jolly Good Plane</div>
 </div>
+
+<div class="image-tooltip" id="image-tooltip"></div>
 
 <script src="../assets/js/script.js"></script>
 </body>

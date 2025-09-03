@@ -201,19 +201,49 @@ h1 {
     background: var(--list-odd);
 }
 
+/* Metadata bar: swatches left, adapted links right */
+.metadata-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* AdaptedFrom links look like normal text, use primary color */
 .adapted-link {
     color: var(--text-primary);
     text-decoration: none;
-    /* remove underline */
 }
 
 .adapted-link:hover,
 .adapted-link:active,
 .adapted-link:focus {
     color: var(--text-primary);
-    /* keep same color on hover/click */
     text-decoration: none;
-    /* no underline on hover/click */
+}
+
+/* Eye icon to preview images */
+.image-eye {
+    cursor: pointer;
+    margin-left: 0.3em;
+}
+
+/* Tooltip container for image preview */
+.image-tooltip {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 4px;
+    border-radius: 8px;
+    z-index: 1000;
+    max-width: 320px;
+}
+
+.image-tooltip img {
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
 }
 
 /* Search Box Styles */

@@ -74,3 +74,47 @@ document.addEventListener('DOMContentLoaded', () => {
     container.querySelector('.scroll-menu').classList.remove('open');
   });
 });
+
+// Image hover
+
+document.addEventListener('DOMContentLoaded', () => {
+  const tooltip = document.getElementById('image-tooltip');
+  if (!tooltip) return;
+
+  // Show tooltip with lazy-loaded image
+  document.body.addEventListener('mouseover', e => {
+    const eye = e.target.closest('.image-eye');
+    if (!eye) return;
+
+    const imgUrl = eye.dataset.img;
+    tooltip.innerHTML = ''; // clear previous
+    const img = document.createElement('img');
+    img.loading = 'lazy'; // hint lazy
+    img.src = imgUrl; // load only on hover
+    tooltip.appendChild(img);
+    tooltip.style.display = 'block';
+  });
+
+  // Track the cursor while hovering
+  document.body.addEventListener('mousemove', e => {
+    if (tooltip.style.display === 'block') {
+      tooltip.style.left = e.pageX + 15 + 'px';
+      tooltip.style.top = e.pageY + 15 + 'px';
+    }
+  });
+
+  // Hide tooltip when leaving the eye
+  document.body.addEventListener('mouseout', e => {
+    const eye = e.target.closest('.image-eye');
+    if (!eye) return;
+    tooltip.style.display = 'none';
+    tooltip.innerHTML = '';
+  });
+
+  // Open the image in a new tab on click
+  document.body.addEventListener('click', e => {
+    const eye = e.target.closest('.image-eye');
+    if (!eye) return;
+    window.open(eye.dataset.img, '_blank', 'noopener,noreferrer');
+  });
+});
