@@ -4,9 +4,9 @@ README
 This markdown file serves as an example on how to format a checklist,
 so that it can be successfully converted into html with the included py script.
 
-Drag and drop the md file onto the script, and a new html will be created
-in the ../checklists directory.
-You still have to manually add your new checklist to the index page though.
+Drag and drop the md file onto the md_to_html script, and a new html
+will be created in the ../checklists directory.
+Don't forget to add your new checklist to the index. See index.md for more info
 -->
 
 <!--Aircraft name and sources (up to 10 links - AdaptedFrom is optional)-->

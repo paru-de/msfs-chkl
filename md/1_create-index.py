@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+import sys
+from pathlib import Path
+
+# Usage: drag and drop index.md onto this script
+if len(sys.argv) < 2:
+    print("Usage: create-index.py <index_markdown>")
+    sys.exit(1)
+
+md_file = Path(sys.argv[1])
+if not md_file.exists():
+    print(f"File not found: {md_file}")
+    sys.exit(1)
+
+lines = md_file.read_text(encoding="utf-8").splitlines()
+
+# Output index.html in root (one level above md file)
+html_file = md_file.parent.parent / "index.html"
+
+html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,66 +43,68 @@
     </header>
 
     <div class="categories">
-<div class="category-group" data-category="airliner">
-  <h2 class="category-title">Airliner</h2>
-  <div class="category-box">
-    <a href="checklists/fenix-airbus32X.html" class="category-link airliner" data-name="fenix airbus 319 320 321">
-        <div class="category-icon">
-            <i class="fas fa-plane"></i>
-        </div>
-        <div class="category-info">
-            <h3>Airbus A32X (Fenix)</h3>
-        </div>
-        <div class="category-arrow">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </a>
-    <a href="checklists/pmdg-77X.html" class="category-link airliner" data-name="pmdg boeing 77X 777-300ER 777-200 777-F">
-        <div class="category-icon">
-            <i class="fas fa-plane"></i>
-        </div>
-        <div class="category-info">
-            <h3>Boeing 77X (PMDG)</h3>
-        </div>
-        <div class="category-arrow">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </a>
-  </div>
-</div>
-<div class="category-group" data-category="multi-turboprop">
-  <h2 class="category-title">Multi-Turboprop</h2>
-  <div class="category-box">
-    <a href="checklists/blacksquare-starship.html" class="category-link multi-turboprop" data-name="beechcraft starship blacksquare 2000 STAR">
-        <div class="category-icon">
-            <i class="fas fa-plane"></i>
-        </div>
-        <div class="category-info">
-            <h3>Beechcraft Starship (Blacksquare)</h3>
-        </div>
-        <div class="category-arrow">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </a>
-  </div>
-</div>
-<div class="category-group" data-category="business">
-  <h2 class="category-title">Business</h2>
-  <div class="category-box">
-    <a href="checklists/flightfx-citationx.html" class="category-link business" data-name="flightfx cessna citation citationx C750">
-        <div class="category-icon">
-            <i class="fas fa-plane"></i>
-        </div>
-        <div class="category-info">
-            <h3>Cessna Citation X (FlightFX)</h3>
-        </div>
-        <div class="category-arrow">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </a>
-  </div>
-</div>
+"""
 
+current_category = None
+current_aircraft = None
+category_open = False  # Tracks if a category div is currently open
+
+for line in lines:
+    line = line.strip()
+    if not line:
+        continue
+
+    # Category
+    if line.startswith("# "):
+        # Close previous category if open
+        if category_open:
+            html += '  </div>\n</div>\n'
+            category_open = False
+
+        current_category = line[2:].strip()
+        html += f'<div class="category-group" data-category="{current_category.lower().replace(" ","-")}">\n'
+        html += f'  <h2 class="category-title">{current_category}</h2>\n'
+        html += '  <div class="category-box">\n'
+        category_open = True
+        current_aircraft = None
+
+    # Aircraft entry
+    elif line.startswith("## "):
+        current_aircraft = {'file': line[3:].strip(), 'category': current_category, 'name': None, 'keywords': None}
+
+    # Metadata
+    elif line.startswith("- ") and current_aircraft is not None:
+        parts = line[2:].split(":", 1)
+        if len(parts) == 2:
+            key = parts[0].strip().lower()
+            val = parts[1].strip()
+            current_aircraft[key] = val
+
+        # If we now have both name and keywords, write the aircraft HTML
+        if current_aircraft.get('name') and current_aircraft.get('keywords'):
+            file = current_aircraft['file']
+            name = current_aircraft['name']
+            keywords = current_aircraft['keywords']
+            category_class = current_aircraft['category'].lower().replace(" ","-")
+            html += f'''    <a href="checklists/{file}.html" class="category-link {category_class}" data-name="{keywords}">
+        <div class="category-icon">
+            <i class="fas fa-plane"></i>
+        </div>
+        <div class="category-info">
+            <h3>{name}</h3>
+        </div>
+        <div class="category-arrow">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </a>\n'''
+            current_aircraft = None  # reset for next aircraft
+
+# Close the last category div if still open
+if category_open:
+    html += '  </div>\n</div>\n'
+
+# Footer + search script
+html += """
     </div>
 
     <footer>
@@ -138,3 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </body>
 </html>
+"""
+
+html_file.write_text(html, encoding="utf-8")
+print(f"Generated {html_file}")

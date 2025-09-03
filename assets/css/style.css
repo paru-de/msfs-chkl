@@ -12,9 +12,35 @@
 
     /* Category colors */
     --piston-color: #1a73e8;
+    /* Blue */
+    --multi-piston-color: #0d47a1;
+    /* Darker blue */
+    --single-turboprop-color: #FF2E2E;
+    /* Bright red */
+    --multi-turboprop-color: #cc0000;
+    /* Dark red */
     --airliner-color: #f57c00;
+    /* Orange */
+    --regional-color: #ff9800;
+    /* Light orange */
     --business-color: #7b1fa2;
+    /* Purple */
     --helicopter-color: #2e7d32;
+    /* Green */
+    --glider-color: #009688;
+    /* Teal */
+    --seaplane-color: #00bcd4;
+    /* Cyan */
+    --experimental-color: #607d8b;
+    /* Blue-gray */
+    --vtol-color: #795548;
+    /* Brown */
+    --military-color: #424242;
+    /* Dark gray */
+    --airship-color: #ff5722;
+    /* Deep orange */
+    --autogyro-color: #8bc34a;
+    /* Lime green */
 
     /* Info box colors */
     --altitude-color: #ff9800;
@@ -406,8 +432,24 @@ h1 {
     background: linear-gradient(to right, var(--piston-color), #0d47a1);
 }
 
+.category-link.multi-piston .category-icon {
+    background: linear-gradient(to right, var(--multi-piston-color), #002f6c);
+}
+
+.category-link.single-turboprop .category-icon {
+    background: linear-gradient(to right, var(--single-turboprop-color), #cc0000);
+}
+
+.category-link.multi-turboprop .category-icon {
+    background: linear-gradient(to right, var(--multi-turboprop-color), #990000);
+}
+
 .category-link.airliner .category-icon {
     background: linear-gradient(to right, var(--airliner-color), #b26a00);
+}
+
+.category-link.regional-jet .category-icon {
+    background: linear-gradient(to right, var(--regional-jet-color), #e65100);
 }
 
 .category-link.business .category-icon {
@@ -416,6 +458,34 @@ h1 {
 
 .category-link.helicopter .category-icon {
     background: linear-gradient(to right, var(--helicopter-color), #1b5e20);
+}
+
+.category-link.glider .category-icon {
+    background: linear-gradient(to right, var(--glider-color), #00675b);
+}
+
+.category-link.seaplane .category-icon {
+    background: linear-gradient(to right, var(--seaplane-color), #008ba3);
+}
+
+.category-link.experimental .category-icon {
+    background: linear-gradient(to right, var(--experimental-color), #455a64);
+}
+
+.category-link.vtol .category-icon {
+    background: linear-gradient(to right, var(--vtol-color), #5d4037);
+}
+
+.category-link.military .category-icon {
+    background: linear-gradient(to right, var(--military-color), #1b1b1b);
+}
+
+.category-link.airship .category-icon {
+    background: linear-gradient(to right, var(--airship-color), #e64a19);
+}
+
+.category-link.autogyro .category-icon {
+    background: linear-gradient(to right, var(--autogyro-color), #558b2f);
 }
 
 .category-info {
