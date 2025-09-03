@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jolly Good Plane | MSFS</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+
+
+
+</head>
+
+<body>
+<div class="container">
+
+  <!-- Floating scroll button -->
+  <div class="scroll-container">
+      <button class="scroll-btn">☰</button>
+      <div class="scroll-menu"><ul></ul></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+      <h1>MSFS Checklists</h1>
+      <p class="subtitle">Jolly Good Plane</p>
+  </header>
+
+  <!-- Top nav -->
+  <div class="nav">
+      <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
+      <div class="aircraft-name">Jolly Good Plane</div>
+  </div>
+
+  <!-- Info Box + AdaptedFrom flex container -->
+  
+<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <div class="info-box">
+        <div><span class="swatch altitude"></span>Altitude</div>
+        <div><span class="swatch note"></span>Notes</div>
+        <div><span class="swatch tablet"></span>EFB/Tablet</div>
+        <div><span class="swatch mcdu"></span>MCDU/FMC</div>
+        <div><span class="swatch atc"></span>ATC</div>
+    </div>
+    <div>Adapted from <a href="https://example.com" target="_blank" class="adapted-link" title="https://example.com">1️⃣</a> <a href="https://another.com" target="_blank" class="adapted-link" title="https://another.com">2️⃣</a></div>
+</div>
+
+
+  <!-- Categories -->
+  <div class="categories">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+<li class="info-box atc-box">Request Push and Engine Start</li>
+<li class="info-box altitude-box">Request Push and Engine Start</li>
+<li class="info-box mcdu-box">DEP/ARR → Set RWY → Set SID/TRANS → EXEC</li>
+<li class="info-box tablet-box">Import Simbrief route & weather</li>
+<li class="info-box note-box">Start Boarding & Refueling</li>
+<div class="divider">Preparation</div>
+<li><div class="checklist-item"><span class="item-left">Hydraulic C1/C2</span><span class="item-right">ON</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+<li class="info-box atc-box">Request Push and Engine Start</li>
+<li class="info-box mcdu-box">DEP/ARR → Set RWY → Set SID/TRANS → EXEC</li>
+<li class="info-box tablet-box">Import Simbrief route & weather</li>
+<li><div class="checklist-item"><span class="item-left">(Notes) Start Boarding & Refueling</span><span class="item-right"></span></div></li>
+<div class="divider">Preparation</div>
+<li><div class="checklist-item"><span class="item-left">Hydraulic C1/C2</span><span class="item-right">ON</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+<li class="info-box atc-box">Request Push and Engine Start</li>
+<li class="info-box mcdu-box">DEP/ARR → Set RWY → Set SID/TRANS → EXEC</li>
+<li class="info-box tablet-box">Import Simbrief route & weather</li>
+<li><div class="checklist-item"><span class="item-left">(Notes) Start Boarding & Refueling</span><span class="item-right"></span></div></li>
+<div class="divider">Preparation</div>
+<li><div class="checklist-item"><span class="item-left">Hydraulic C1/C2</span><span class="item-right">ON</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push, Taxi, Lineup, Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push and Engine Start</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU</span><span class="item-right">VERIFY ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT POWER</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+</div></div>
+
+<div class="nav">
+    <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
+    <div class="aircraft-name">Jolly Good Plane</div>
+</div>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

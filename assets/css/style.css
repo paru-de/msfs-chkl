@@ -201,6 +201,21 @@ h1 {
     background: var(--list-odd);
 }
 
+.adapted-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    /* remove underline */
+}
+
+.adapted-link:hover,
+.adapted-link:active,
+.adapted-link:focus {
+    color: var(--text-primary);
+    /* keep same color on hover/click */
+    text-decoration: none;
+    /* no underline on hover/click */
+}
+
 /* Search Box Styles */
 .search-container {
     display: flex;
