@@ -182,7 +182,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - Altitude (as instructed by ATC or restriction): PRE-SELECT
 - CHKL Descent: COMPLETE
 
-### Descent
+## Descent
 
 - (ATC) Clearance received
 - Altitude: VERIFY

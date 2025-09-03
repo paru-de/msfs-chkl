@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
-
-
-
 </head>
 
 <body>
@@ -34,9 +31,9 @@
       <div class="aircraft-name">PMDG Boeing 77X</div>
   </div>
 
-  <!-- Info Box + AdaptedFrom flex container -->
+  <!-- Swatches + AdaptedFrom -->
   
-<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+<div class="metadata-bar">
     <div class="info-box">
         <div><span class="swatch altitude"></span>Altitude</div>
         <div><span class="swatch note"></span>Notes</div>
@@ -44,13 +41,13 @@
         <div><span class="swatch mcdu"></span>MCDU/FMC</div>
         <div><span class="swatch atc"></span>ATC</div>
     </div>
-    <div>Adapted from <a href="https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedures" target="_blank" class="adapted-link" title="https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedures">1️⃣</a> <a href="https://flightsim.to/file/77321/pmdg-777-300er-checklist" target="_blank" class="adapted-link" title="https://flightsim.to/file/77321/pmdg-777-300er-checklist">2️⃣</a></div>
+    <div><a href="https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedures" target="_blank" class="adapted-link" title="https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedures">1️⃣</a> <a href="https://flightsim.to/file/77321/pmdg-777-300er-checklist" target="_blank" class="adapted-link" title="https://flightsim.to/file/77321/pmdg-777-300er-checklist">2️⃣</a></div>
 </div>
 
 
   <!-- Categories -->
   <div class="categories">
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Cockpit preparations </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Cockpit preparations</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Power Up</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li><div class="checklist-item"><span class="item-left">Battery Switch</span><span class="item-right">ON</span></div></li>
 <li><div class="checklist-item"><span class="item-left">NAV Lights</span><span class="item-right">ON</span></div></li>
@@ -104,7 +101,7 @@
 <li class="info-box note-box">Boarding & Refueling completed</li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push and Taxi </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push and Taxi</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li class="info-box atc-box">ATC: Request Push and Engine Start</li>
 <li class="info-box note-box">OnAir Company: Start tracking</li>
@@ -139,7 +136,7 @@
 <li><div class="checklist-item"><span class="item-left">Seatbelts</span><span class="item-right">ON</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Line-up and Takeoff </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Line-up and Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Before Takeoff</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li><div class="checklist-item"><span class="item-left">Autobrake</span><span class="item-right">VERIFY RTO</span></div></li>
 <li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">VERIFY TO</span></div></li>
@@ -165,7 +162,7 @@
 <li><div class="checklist-item"><span class="item-left">VR</span><span class="item-right">ROTATE</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>After Takeoff, Climb, Cruise </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>After Takeoff, Climb, Cruise</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Positive Rate of Climb</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">UP</span></div></li>
 <li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">UP AS ADV</span></div></li>
@@ -189,7 +186,7 @@
 <li><div class="checklist-item"><span class="item-left">Step Climbs</span><span class="item-right">CHECK OFP / VNAV</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Descent </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Descent</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Before Top Of Descent</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Landing Calculations</div>
 <li class="info-box tablet-box">Performance Arrival Enroute → Calculate with desired config</li>
@@ -202,7 +199,8 @@
 <li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">PRE-SELECT LOCAL</span></div></li>
 <li><div class="checklist-item"><span class="item-left">Altitude (as instructed by ATC or restriction)</span><span class="item-right">PRE-SELECT</span></div></li>
 <li><div class="checklist-item"><span class="item-left">CHKL Descent</span><span class="item-right">COMPLETE</span></div></li>
-<div class="divider">Descent</div>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Descent</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li class="info-box atc-box">Clearance received</li>
 <li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">VERIFY</span></div></li>
 <li class="info-box altitude-box">FL200</li>
@@ -216,7 +214,7 @@
 <li><div class="checklist-item"><span class="item-left">CHKL Approach</span><span class="item-right">CALL</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Approach </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Approach</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">ILS</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Flaps Reference</div>
 <li><div class="checklist-item"><span class="item-left">Flaps 1</span><span class="item-right">AT/ABV UP</span></div></li>
@@ -261,7 +259,7 @@
 <li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">OFF</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Shutdown </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Shutdown</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Taxi</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li class="info-box atc-box">Report vacated</li>
 <li><div class="checklist-item"><span class="item-left">Strobe</span><span class="item-right">OFF</span></div></li>
@@ -305,6 +303,8 @@
     <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
     <div class="aircraft-name">PMDG Boeing 77X</div>
 </div>
+
+<div class="image-tooltip" id="image-tooltip"></div>
 
 <script src="../assets/js/script.js"></script>
 </body>
