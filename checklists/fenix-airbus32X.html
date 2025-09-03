@@ -2,1369 +2,312 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fenix Airbus A32X family | MSFS</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fenix Airbus A32x | MSFS</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+
+
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="scroll-container">
-            <button class="scroll-btn">☰</button>
-            <div class="scroll-menu">
-                <ul></ul>
-            </div>
-        </div>
-        <header>
-            <h1>MSFS Checklists</h1>
-            <p class="subtitle">Fenix Airbus A32X family</p>
-        </header>
+<div class="container">
 
-        <div class="nav">
-            <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
-            <div class="aircraft-name">Fenix Airbus A32X family (Cold & Dark)</div>
-        </div>
-        <div class="info-box">
-            <div><span class="swatch altitude"></span>Altitude</div>
-            <div><span class="swatch note"></span>Notes</div>
-            <div><span class="swatch tablet"></span>EFB/Tablet</div>
-            <div><span class="swatch mcdu"></span>MCDU/FMC</div>
-            <div><span class="swatch atc"></span>ATC</div>
-        </div>
-        <div class="categories">
-            <!-- Cockpit preparations -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>Cockpit preparations</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Power Up & Overhead</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <div class="divider">Verify status</div>
-                                <li class="info-box tablet-box">Fenix → My Flight → Import from Simbrief </li>
+  <!-- Floating scroll button -->
+  <div class="scroll-container">
+      <button class="scroll-btn">☰</button>
+      <div class="scroll-menu"><ul></ul></div>
+  </div>
 
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">WX Radar (SYS)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Predictive Wind Shear (PWS)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Mode knob</span>
-                                        <span class="item-right">WX+T+HZD</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Gain knob</span>
-                                        <span class="item-right">CAL</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Clutter Suppression (GCS)</span>
-                                        <span class="item-right">AUTO</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Master 1/2</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode Selector</span>
-                                        <span class="item-right">NORM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Gear</span>
-                                        <span class="item-right">DOWN</span>
-                                    </div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Wipers 1/2</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Power-up</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">BAT 1/2</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">EXT PWR (if available)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li class="info-box note-box">Wait for boot-up and self-checks to be completed (three
-                                    clicks)</li>
+  <!-- Header -->
+  <header>
+      <h1>MSFS Checklists</h1>
+      <p class="subtitle">Fenix Airbus A32x</p>
+  </header>
 
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Master</span>
-                                        <span class="item-right" ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Start (3sec after Master)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed AVAIL</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">EXT PWR</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ADIRS</span>
-                                        <span class="item-right">NAV</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Cockpit Lights</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
+  <!-- Top nav -->
+  <div class="nav">
+      <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
+      <div class="aircraft-name">Fenix Airbus A32x</div>
+  </div>
 
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Boarding, Refuel, Flight Plan</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <div class="divider">MCDU and EFB setup</div>
-                                <li class="info-box mcdu-box">
-                                    ATSU → AOC → FLT INIT → INIT DATA REQ</li>
-                                <li class="info-box mcdu-box">INIT → INIT RQUEST → Enter ATC FLT NBR</li>
-                                <li class="info-box tablet-box">Fenix → MASS AND BALANCE → LOAD AIRCRAFT
-                                </li>
-                                <div class="divider">Overhead panel</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">NAV & LOGO Lights</span>
-                                        <span class="item-right">ON (1 or 2)</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Fuel Pumps</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Oxygen Crew</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Overhead Panel</span>
-                                        <span class="item-right">NO WHITE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Emergency Exit Lights</span>
-                                        <span class="item-right">ARM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">No Smoking</span>
-                                        <span class="item-right">AUTO</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Seat Belts</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Flight plan setup</div>
-                                <li class="info-box atc-box">ATC: Request Clearance (IFR)</li>
-                                <li class="info-box mcdu-box">INIT → Enter CI → Enter CRZ FL → WIND → WIND Request</li>
-
-                                <li class="info-box mcdu-box">F-PLN → Select DEP RW/SID/TRANS → TMPY INSERT</li>
-                                <li class="info-box mcdu-box">
-                                    SEC F-PLN → COPY ACTIVE</li>
-                                <li class="info-box mcdu-box">F-PLN → Select ARR RWY/STAR/TRANS → TMPY INSERT</li>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">CSTR</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">NAV display mode PLAN</span>
-                                        <span class="item-right">VERIFY RTE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Squawk</span>
-                                        <span class="item-right">SET</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Performance calculations</div>
-                                <li class="info-box mcdu-box">
-                                    INIT P2 → Enter ZFW/ZFWCG → FUEL PLANNING → Confirm
-                                    BLOCK</li>
-
-                                <li class="info-box note-box">Confirm Boarding and Refueling has finished</li>
-                                <li class="info-box tablet-box">
-                                    Fenix → MASS AND BALANCE → SEND TO MCDU</li>
-                                <li class="info-box mcdu-box">
-                                    MENU → ATSU → AOC → RCVD MSFS → LOADSHEET (latest) → ACCEPT</li>
-                                <li class="info-box mcdu-box">
-                                    Departure Perf → SYNC LOADSHEET → SYNC LIVE WX → Set config → CALCULATE → SEND TO
-                                    MCDU</li>
-                                </li>
-                                <div class="divider">Seven Segment Display</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ALTIMETER</span>
-                                        <span class="item-right">SET</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flight Director</span>
-                                        <span class="item-right">ON x2</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">SPD & HDG</span>
-                                        <span class="item-right">DASHED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ALT</span>
-                                        <span class="item-right">SET INITIAL</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Prepare push-back</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Transponder</span>
-                                        <span class="item-right">AUTO</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Beacon</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">IDLE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed</span>
-                                        <span class="item-right">VERIFY ON</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Push, Taxi, Takeoff Category -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>Push, Taxi, Lineup, Takeoff</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Push and Engine Start</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <li class="info-box atc-box">ATC: Request Push and Engine Start<br>
-                                    OnAir Company: Start tracking</li>
-                                <div class="divider">Push and Engine Start</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Crew</span>
-                                        <span class="item-right">ADVICE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PRK BRK</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode</span>
-                                        <span class="item-right">IGN / START</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Master 1/2</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Master 1/2</span>
-                                        <span class="item-right">AVAIL</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode</span>
-                                        <span class="item-right">NORM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Pushback Completed</span>
-                                        <span class="item-right">VERIFY</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PRK BRK</span>
-                                        <span class="item-right">SET</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Configure for take-off</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Master</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG & Wing A/I</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Autobrake</span>
-                                        <span class="item-right">ARMED (MAX)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">GRND Spoilers</span>
-                                        <span class="item-right">ARMED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RUD TRIM</span>
-                                        <span class="item-right">Reset</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FLAPS</span>
-                                        <span class="item-right">TO</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Trim</span>
-                                        <span class="item-right">TO</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Before Taxi</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <li class="info-box atc-box">ATC: Request Taxi Clearance</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Nose Light</span>
-                                        <span class="item-right">TAXI</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RWY TURN OFF Lights</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Transponder / TCAS</span>
-                                        <span class="item-right">AUTO / ABV</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Line-Up and Takeoff</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <li class="info-box atc-box">ATC: Request Clearance</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PACKS 1/2</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG & Wings A/I</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Cabin</span>
-                                        <span class="item-right">ADVICE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Transponder</span>
-                                        <span class="item-right">TA</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Strobe</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Terrain</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">WX (SYS)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Wind shear (PWS)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">TO Config Button</span>
-                                        <span class="item-right">PUSH & CONFIRM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Lights</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Nose Lights</span>
-                                        <span class="item-right">TO</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- After Takeoff, climb, cruise -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>After Takeoff, climb, cruise</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">After Takeoff</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <div class="divider">Positive Rate of Climb</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Gear</span>
-                                        <span class="item-right">UP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust Levers</span>
-                                        <span class="item-right">CLB when flashing</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">UP 1 at S</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP1</span>
-                                        <span class="item-right">ENGAGE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Spoilers</span>
-                                        <span class="item-right">DISARM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PACK 1/2</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG A/I</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RWY TURN OFF Lights</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode</span>
-                                        <span class="item-right">NORM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Transponder / TCAS</span>
-                                        <span class="item-right">TA/RA; ABV</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Climb</div>
-                                <li class="info-box altitude-box">TRANSITION ALTITUDE</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Altimeter</span>
-                                        <span class="item-right">STD</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PACKS 1/2 ON</span>
-                                        <span class="item-right">VERIFY</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">FL100</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Lights</span>
-                                        <span class="item-right">RETRACT</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Nose Light</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Seatbelts</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Terrain</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <div class="divider">Cruise</div>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">TCAS</span>
-                                        <span class="item-right">ALL</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Step Climbs (LR/Neo)</span>
-                                        <span class="item-right">CHECK OFP</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Descent -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>Descent</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Descent</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <div class="divider">Landing calculations</div>
-                                <li class="info-box altitude-box">150nm BEFORE T/D</li>
-                                <li class="info-box mcdu-box">INIT → WIND → WIND REQUEST → WIND → UPLINK INSERT</li>
-                                <li class="info-box tablet-box">Arrival Perf → Refresh METAR</li>
-                                <li class="info-box mcdu-box">FUEL PRED → DEST EFOB - FOB → Subtract difference from
-                                    GW</li>
-                                <li class="info-box tablet-box">Arrival Perf → Set LANDING WT → Set Landing Config →
-                                    Calculate and confirm landing distance</li>
-
-                                <div class="divider">Landing setup</div>
-                                <li class="info-box mcdu-box">F-PLN → ARR RUNWAY → STAR → TRANS → TMPY INSERT</li>
-                                <li class="info-box mcdu-box">PERF P3 → Enter QNH, TEMP, WINDS, TRANS FL,
-                                    BARO/RADIO, LDG CONF</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AUTO BRK</span>
-                                        <span class="item-right">SET</span>
-                                    </div>
-                                </li>
-                                <li class="info-box note-box">If LDG CONF 3: GPWS PANEL → Set LDG FLAP 3 ON</li>
-                                <div class="divider">Descent</div>
-                                <li class="info-box atc-box">ATC Clearance received</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU ALT</span>
-                                        <span class="item-right">SET, MANAGED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU SPD</span>
-                                        <span class="item-right">MANAGED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG A/I</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">TCAS</span>
-                                        <span class="item-right">BLW</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">FL150</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Seatbelts</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">FL100</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Lights</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Nose Lights</span>
-                                        <span class="item-right">TO</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Terrain</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Mode</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">LS (ILS)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">TRANSITION ALTITUDE</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Altimeter</span>
-                                        <span class="item-right">SET LOCAL</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Approach Category -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>Approach</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">ILS</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <div class="divider">Decel point</div>
-                            <li class="info-box mcdu-box">PERF → APPR → Activate → Confirm</li>
-                            <ul>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU ALT</span>
-                                        <span class="item-right">MANAGED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">LS</span>
-                                        <span class="item-right">VERIFY ON</span>
-                                    </div>
-                                </li>
-                                <div class="divider">3nm PRIOR FAF</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FLAPS</span>
-                                        <span class="item-right">1</span>
-                                    </div>
-                                </li>
-                                <li class="info-box note-box">Wait for Speed S</li>
-                                <li class="info-box atc-box">ATC clearance received</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">LOC and GS</span>
-                                        <span class="item-right">CONFIRM ACTIVE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APPR</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP2</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <div class="divider">LOC and GS captured</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU ALT</span>
-                                        <span class="item-right">MISSED APPR</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">2</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Gear</span>
-                                        <span class="item-right">DOWN</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">LANDING</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Spoilers</span>
-                                        <span class="item-right">ARMED</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">300FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP (no autoland)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">30FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Begin Flare</span>
-                                        <span class="item-right">+2-3 DEGREE</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">20FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">RETARD</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flare</span>
-                                        <span class="item-right">HOLD</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">TOUCHDOWN</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">REV AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">RNAV</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <div class="divider">Decel point</div>
-                            <li class="info-box mcdu-box">PERF → APPR → Activate → Confirm</li>
-                            <ul>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU ALT</span>
-                                        <span class="item-right">MANAGED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">LS</span>
-                                        <span class="item-right">VERIFY OFF</span>
-                                    </div>
-                                </li>
-                                <div class="divider">5nm PRIOR FAF</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FLAPS</span>
-                                        <span class="item-right">1</span>
-                                    </div>
-                                </li>
-                                <li class="info-box note-box">Wait for Speed S</li>
-                                <div class="checklist-item">
-                                    <span class="item-left">FLAPS</span>
-                                    <span class="item-right">2</span>
-                                </div>
-                                <div class="divider">APPROACHING FAF</div>
-                                <li class="info-box atc-box">ATC clearance received</li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APPR</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">FCU ALT</span>
-                                        <span class="item-right">MISSED APPR</span>
-                                    </div>
-                                </li>
-                                <div class="divider">LOC and/or GP captured</div>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Gear</span>
-                                        <span class="item-right">DOWN</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">LANDING</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Spoilers</span>
-                                        <span class="item-right">ARMED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RWY TURN OFF Light</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">300FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP (no autoland)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">30FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Begin Flare</span>
-                                        <span class="item-right">+2-3 DEGREE</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">20FT</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">RETARD</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flare</span>
-                                        <span class="item-right">HOLD</span>
-                                    </div>
-                                </li>
-                                <li class="info-box altitude-box">TOUCHDOWN</li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">REV AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">AP</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Go Around</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <ul>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">TO/GA</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Pitch</span>
-                                        <span class="item-right">ROTATE</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">ONE UP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Landing Gear</span>
-                                        <span class="item-right">UP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">HDG, AP</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Thrust</span>
-                                        <span class="item-right">CLB</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">F Speed</span>
-                                        <span class="item-right">FLAPS 1</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">S Speed</span>
-                                        <span class="item-right">FLAPS UP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Spoilers</span>
-                                        <span class="item-right">DISARM</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RWY TURN OFF Lights</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-
-                                <li class="info-box atc-box">ATC: Advice and wait for instructions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Shutdown Category -->
-            <div class="category">
-                <div class="category-header" onclick="toggleCategory(this)">
-                    <span>Shutdown</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="checklist-items">
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">Taxi</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <div class="divider">Taxi to gate</div>
-                            <li class="info-box atc-box">ATC: Report vacated</li>
-                            <ul>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Strobe Light</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">Landing Light</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Nose Light</span>
-                                        <span class="item-right">TAXI</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Flaps</span>
-                                        <span class="item-right">UP</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Ground Spoilers</span>
-                                        <span class="item-right">CONFIRM DISARMED</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Terrain</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">WX (SYS)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Wind shear (PWS)</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG A/I</span>
-                                        <span class="item-right">AS REQ</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Master</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Start (after 3sec)</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-
-                        </div>
-                    </div>
-                    <div class="checklist">
-                        <div class="checklist-header" onclick="toggleChecklist(this)">
-                            <span class="checklist-title">At Parking / Gate</span>
-                            <i class="fas fa-chevron-down checklist-icon"></i>
-                        </div>
-                        <div class="checklist-content">
-                            <div class="divider">Deboarding</div>
-                            <ul>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">PRK BRK</span>
-                                        <span class="item-right">SET</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">RWY TURN OFF Lights</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG A/I</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed</span>
-                                        <span class="item-right">ON</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Seatbelts</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ENG Master 1/2</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Beacon</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Fuel Pumps</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Transponder</span>
-                                        <span class="item-right">STBY</span>
-                                    </div>
-                                </li>
-                                <li class="info-box note-box">Request Deboarding</li>
-
-                                <div class="divider">Shutdown</div>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">EXT PWR</span>
-                                        <span class="item-right">ON IF AVAIL</span>
-                                    </div>
-                                </li>
+  <!-- Info Box + AdaptedFrom flex container -->
+  
+<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <div class="info-box">
+        <div><span class="swatch altitude"></span>Altitude</div>
+        <div><span class="swatch note"></span>Notes</div>
+        <div><span class="swatch tablet"></span>EFB/Tablet</div>
+        <div><span class="swatch mcdu"></span>MCDU/FMC</div>
+        <div><span class="swatch atc"></span>ATC</div>
+    </div>
+    <div>Adapted from <a href="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist" target="_blank" class="adapted-link" title="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist">1️⃣</a></div>
+</div>
 
 
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed</span>
-                                        <span class="item-right">OFF WITH EXT PWR</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Master</span>
-                                        <span class="item-right">OFF WITH EXT PWR</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Oxygen Crew</span>
-                                        <span class="item-right">OFF\</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">ADIRS</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Exterior Lights</span>
-                                        <span class="item-right">ALL OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">No Smoking</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">Emergency Lights</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Bleed</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">APU Master</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">BAT 1/2</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checklist-item">
-                                        <span class="item-left">EXT PWR</span>
-                                        <span class="item-right">OFF</span>
-                                    </div>
-                                </li>
+  <!-- Categories -->
+  <div class="categories">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Cockpit Preparations </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Power Up & Overhead</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li class="info-box tablet-box">Fenix → My Flight → Import from Simbrief</li>
+<div class="divider">Verify</div>
+<li><div class="checklist-item"><span class="item-left">WX Radar (SYS)</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Predictive Wind Shear (PWS)</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">WX Mode knob</span><span class="item-right">WX+T+HZD</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Gain knob</span><span class="item-right">CAL</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Clutter Suppression (GCS)</span><span class="item-right">AUTO</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Master 1/2</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode Selector</span><span class="item-right">NORM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">DOWN</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Wipers 1/2</span><span class="item-right">OFF</span></div></li>
+<div class="divider">Power Up</div>
+<li><div class="checklist-item"><span class="item-left">BAT 1/2</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT PWR (if available)</span><span class="item-right">ON</span></div></li>
+<li class="info-box note-box">Wait for boot-up and self-checks to be completed (three clicks)</li>
+<li><div class="checklist-item"><span class="item-left">APU Master</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Start (3sec after Master)</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Bleed (AVAIL)</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT PWR</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ADIRS</span><span class="item-right">NAV x3</span></div></li>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Boarding & Refuel, Flight Plan</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">MCDU and EFB setup</div>
+<li class="info-box mcdu-box">ATSU → AOC → FLT INIT → INIT DATA REQ</li>
+<li class="info-box mcdu-box">INIT → INIT RQUEST → Enter ATC FLT NBR</li>
+<li class="info-box tablet-box">Fenix → MASS AND BALANCE → LOAD AIRCRAFT</li>
+<div class="divider">Overhead panel</div>
+<li><div class="checklist-item"><span class="item-left">NAV & LOGO Lights</span><span class="item-right">ON (1 or 2)</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Fuel Pumps</span><span class="item-right">ALL ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Oxygen Crew</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">GND CTL</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">CVR TEST</span><span class="item-right">PUSH</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Emergency Exit Lights</span><span class="item-right">ARMED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">No Smoking</span><span class="item-right">AUTO</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Seat Belts</span><span class="item-right">ON</span></div></li>
+<div class="divider">Flight plan setup</div>
+<li class="info-box atc-box">Request Clearance (IFR)</li>
+<li class="info-box mcdu-box">INIT → Enter CI → Enter CRZ FL → WIND → WIND Request</li>
+<li class="info-box mcdu-box">F-PLN → Select DEP RW/SID/TRANS → TMPY INSERT</li>
+<li class="info-box mcdu-box">SEC F-PLN → COPY ACTIVE</li>
+<li class="info-box mcdu-box">F-PLN → Select ARR RWY/STAR/TRANS → TMPY INSERT</li>
+<li><div class="checklist-item"><span class="item-left">CSTR</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">NAV display mode PLAN</span><span class="item-right">VERIFY RTE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Squawk</span><span class="item-right">SET</span></div></li>
+<div class="divider">Performance calculations</div>
+<li class="info-box mcdu-box">INIT P2 → Enter ZFW/ZFWCG → FUEL PLANNING → Confirm BLOCK</li>
+<li class="info-box note-box">Confirm Boarding and Refueling has finished</li>
+<li class="info-box tablet-box">Fenix → MASS AND BALANCE → SEND TO MCDU</li>
+<li class="info-box mcdu-box">MENU → ATSU → AOC → RCVD MSFS → LOADSHEET (latest) → ACCEPT</li>
+<li class="info-box mcdu-box">Departure Perf → SYNC LOADSHEET → SYNC LIVE WX → Set config → CALCULATE → SEND TO MCDU</li>
+<div class="divider">Seven Segment Display</div>
+<li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">SET LOCALE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flight Director</span><span class="item-right">ON x2</span></div></li>
+<li><div class="checklist-item"><span class="item-left">HDG</span><span class="item-right">DASHED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">SET INITIAL CLEARANCE</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push & Taxi, Line-up and Takeoff </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">Prepare Push</div>
+<li><div class="checklist-item"><span class="item-left">Transponder</span><span class="item-right">AUTO</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Beacon</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Thrust</span><span class="item-right">IDLE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Bleed</span><span class="item-right">VERIFY on</span></div></li>
+<div class="divider">Push and Engine start</div>
+<li class="info-box atc-box">Request Push and Engine Start</li>
+<li class="info-box atc-box">OnAir Company: Start tracking</li>
+<li><div class="checklist-item"><span class="item-left">Ground Crew</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Parking Brake</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode</span><span class="item-right">IGN/START</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Master 1/2</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Status</span><span class="item-right">VERIFY AVAIL</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode</span><span class="item-right">NORM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Pushback Completed</span><span class="item-right">VERIFY</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Parking Brake</span><span class="item-right">SET</span></div></li>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Before Taxi</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">APU Bleed</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Master</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Autobrake</span><span class="item-right">ARMED MAX</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Spoilers</span><span class="item-right">ARMED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">RUD TRIM</span><span class="item-right">PUSH RESET</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">TO</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Trim</span><span class="item-right">TO</span></div></li>
+<li class="info-box atc-box">Request Taxi Clearance</li>
+<li><div class="checklist-item"><span class="item-left">Nose Light</span><span class="item-right">TAXI</span></div></li>
+<li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Transponder / TCAS</span><span class="item-right">AUTO / ABV</span></div></li>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Line-up and Takeoff</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li class="info-box atc-box">Request Clearance</li>
+<li><div class="checklist-item"><span class="item-left">PACKS 1/2</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Cabin</span><span class="item-right">ADVICE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Transponder</span><span class="item-right">TA</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Strobe</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Terrain</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">WX (SYS)</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Wind shear (PWS)</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">TO Config Button</span><span class="item-right">PUSH & CONFIRM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Landing Lights</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Nose Lights</span><span class="item-right">TO</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>After Takeoff, Climb, Cruise </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">After Takeoff</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">Positive Rate of Climb</div>
+<li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">UP</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Thrust Levers</span><span class="item-right">CLB (when flashing)</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">UP 1 at S</span></div></li>
+<li><div class="checklist-item"><span class="item-left">AP1</span><span class="item-right">ENGAGE AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Spoilers</span><span class="item-right">DISARM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">PACK 1/2</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode</span><span class="item-right">NORM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Transponder / TCAS</span><span class="item-right">TA/RA; ABV</span></div></li>
+<div class="divider">Climb</div>
+<li class="info-box altitude-box">TRANSITION ALTITUDE</li>
+<li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">STD</span></div></li>
+<li><div class="checklist-item"><span class="item-left">PACKS 1/2 ON</span><span class="item-right">VERIFY</span></div></li>
+<li class="info-box altitude-box">FL100</li>
+<li><div class="checklist-item"><span class="item-left">Landing Lights</span><span class="item-right">OFF & RETRACT</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Nose Light</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Seatbelts</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Terrain</span><span class="item-right">OFF</span></div></li>
+<div class="divider">Cruise</div>
+<li><div class="checklist-item"><span class="item-left">TCAS</span><span class="item-right">ALL</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Step Climbs (LR/Neo)</span><span class="item-right">CHECK OFP</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Descent </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Before Top of Descent</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">Landing calculations</div>
+<li class="info-box mcdu-box">INIT → WIND → WIND REQUEST → WIND → UPLINK INSERT</li>
+<li class="info-box tablet-box">Arrival Perf → Refresh METAR</li>
+<li class="info-box mcdu-box">FUEL PRED → DEST EFOB - FOB → Subtract difference from GW</li>
+<li class="info-box tablet-box">Arrival Perf → Set LANDING WT → Set Landing Config → Calculate and confirm landing distance</li>
+<div class="divider">Landing setup</div>
+<li class="info-box mcdu-box">F-PLN → ARR RUNWAY → STAR → TRANS → TMPY INSERT</li>
+<li class="info-box mcdu-box">PERF P3 → Enter QNH, TEMP, WINDS, TRANS FL, BARO/RADIO, LDG CONF</li>
+<li><div class="checklist-item"><span class="item-left">Autobrake</span><span class="item-right">SET</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">PRE-SELECT LOCAL</span></div></li>
+<li class="info-box note-box">: If LDG CONF 3: GPWS OVERHEAD PANEL → LDG FLAP 3 ON</li>
+<div class="divider">Descent</div>
+<li class="info-box atc-box">Clearance received</li>
+<li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">SET; MANAGED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Speed</span><span class="item-right">MANAGED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">TCAS</span><span class="item-right">BLW</span></div></li>
+<li class="info-box altitude-box">FL150</li>
+<li><div class="checklist-item"><span class="item-left">Seatbelts</span><span class="item-right">ON</span></div></li>
+<li class="info-box altitude-box">FL100</li>
+<li><div class="checklist-item"><span class="item-left">Landing Lights</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Nose Lights</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Terrain</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Mode</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">LS (ILS)</span><span class="item-right">ON</span></div></li>
+<li class="info-box altitude-box">TRANSITION ALTITUDE</li>
+<li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">SWITCH LOCAL</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Approach </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">ILS</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">Decel point</div>
+<li class="info-box mcdu-box">PERF → APPR → Activate → Confirm</li>
+<li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">MANAGED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">LS</span><span class="item-right">VERIFY ON</span></div></li>
+<div class="divider">3-5nm PRIOR FAF</div>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">1</span></div></li>
+<li class="info-box note-box">Wait for Speed S</li>
+<li class="info-box atc-box">Clearance received</li>
+<li><div class="checklist-item"><span class="item-left">LOC and GS</span><span class="item-right">CONFIRM ACTIVE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APPR</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">AP2</span><span class="item-right">ON</span></div></li>
+<div class="divider">LOC and GS captured</div>
+<li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">SET MISSED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">2</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">DOWN</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">LANDING</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Spoilers</span><span class="item-right">ARMED</span></div></li>
+<li class="info-box altitude-box">300ft</li>
+<li><div class="checklist-item"><span class="item-left">AP (when not autolanding)</span><span class="item-right">OFF</span></div></li>
+<li class="info-box altitude-box">30ft</li>
+<li><div class="checklist-item"><span class="item-left">Begin Flare</span><span class="item-right">2-3 DEGREES</span></div></li>
+<li class="info-box altitude-box">20ft</li>
+<li><div class="checklist-item"><span class="item-left">Thrust</span><span class="item-right">RETARD: IDLE</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flare</span><span class="item-right">HOLD</span></div></li>
+<li class="info-box altitude-box">TOUCHDOWN</li>
+<li><div class="checklist-item"><span class="item-left">Thrust</span><span class="item-right">REV AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">AP</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Go Around</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li><div class="checklist-item"><span class="item-left">Thrust</span><span class="item-right">TO/GA</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Pitch</span><span class="item-right">ROTATE</span></div></li>
+<li class="info-box atc-box">Advice</li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">ONE UP</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">UP</span></div></li>
+<li><div class="checklist-item"><span class="item-left">HDG, AP</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Thrust</span><span class="item-right">CLB</span></div></li>
+<li><div class="checklist-item"><span class="item-left">F Speed</span><span class="item-right">FLAPS 1</span></div></li>
+<li><div class="checklist-item"><span class="item-left">S Speed</span><span class="item-right">FLAPS UP</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Spoilers</span><span class="item-right">DISARM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+</div></div>
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Shutdown </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Taxi</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<li class="info-box atc-box">Report vacated</li>
+<li><div class="checklist-item"><span class="item-left">Strobe</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Landing Lights</span><span class="item-right">OFF & RETRACTED</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Nose Light</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Flaps</span><span class="item-right">UP</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Ground Spoilers</span><span class="item-right">VERIFY DISARM</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Terrain</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">WX (SYS)</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Wind shear (PWS)</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">AS REQ</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Master</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Start (3sec after Master)</span><span class="item-right">ON</span></div></li>
+</ul></div></div>
+<div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">At Parking / Gate</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
+<div class="divider">Deboarding</div>
+<li><div class="checklist-item"><span class="item-left">Parking Brake</span><span class="item-right">SET</span></div></li>
+<li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG A/I</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Bleed (AVAIL)</span><span class="item-right">ON</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Seatbelts</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ENG Master 1/2</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Beacon</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Fuel Pumps</span><span class="item-right">ALL OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">TransponderL STBY</span><span class="item-right"></span></div></li>
+<li class="info-box note-box">Request Deboarding</li>
+<div class="divider">Shutdown</div>
+<li><div class="checklist-item"><span class="item-left">EXT PWR</span><span class="item-right">ON if AVAIL</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Bleed</span><span class="item-right">OFF with EXT PWR</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Master</span><span class="item-right">OFF with EXT PWR</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Oxygen Crew</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">ADIRS</span><span class="item-right">OFF x3</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Exterior Lights</span><span class="item-right">ALL OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">No Smoking</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">Emergency Lights</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Bleed</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">APU Master</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">BAT 1/2</span><span class="item-right">OFF</span></div></li>
+<li><div class="checklist-item"><span class="item-left">EXT PWR</span><span class="item-right">OFF</span></div></li>
+</ul></div></div>
+</div></div>
+<br>
+<div class="nav">
+    <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
+    <div class="aircraft-name">Fenix Airbus A32x</div>
+</div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nav">
-                <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft
-                    List</a>
-                <div class="aircraft-name">Fenix Airbus A32X family (Cold & Dark)</div>
-            </div>
-        </div>
-
-        <script src="../assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
-
 </html>
