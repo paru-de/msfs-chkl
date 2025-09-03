@@ -12,6 +12,36 @@ These checklists don't aim to be exhaustive, nor are they intended for anything 
 
 **Disclaimer**: I'm not a hackerman, and most of the code in this repository was written by a LLM.
 
+## Clone or Fork
+
+You can get a copy of this repository in two ways:
+
+### Clone
+
+Clone the repository using HTTPS:
+
+```bash
+git clone https://github.com/paru-de/msfs-chkl.git
+```
+
+Or using SSH (if you have SSH keys set up):
+
+```bash
+git clone git@github.com:paru-de/msfs-chkl.git
+```
+
+### Fork
+
+1. Click the Fork button in the top-right corner.
+
+2. Clone your forked repository locally:
+
+```bash
+git clone https://github.com/<your-username>/msfs-chkl.git
+```
+
+Replace `<your-username>` with your GitHub username.
+
 ## Converting MD to html
 
 The provided Python script, located in the ./md directory, converts Markdown files into HTML. Simply drag and drop a \*.md file onto the script, and you'll find the converted HTML in the ./checklists directory.
@@ -21,3 +51,7 @@ Don't forget to add your new checklist to the index page! You can find instructi
 For proper formatting, see the provided [./md/example-formatting.md](https://github.com/paru-de/msfs-chkl/blob/main/md/example-formatting.md?plain=1).
 
 A Python installation is required.
+
+```
+
+```
