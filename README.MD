@@ -16,5 +16,6 @@ These checklists don't aim to be exhaustive, nor are they intended for anything 
 
 The provided Python script, located in the ./md directory, converts Markdown files into HTML. Simply drag and drop a \*.md file onto the script, and you'll find the converted HTML in the ./checklists directory. Note: You still have to manually add the generated checklist HTML to the index page.
 
-For proper formatting, see the provided ./md/example-formatting.md.
+For proper formatting, see the provided [./md/example-formatting.md](https://github.com/paru-de/msfs-chkl/blob/main/md/example-formatting.md?plain=1).
+
 A Python installation is required.
