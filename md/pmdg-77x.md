@@ -17,6 +17,8 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - APU: ON then START
 - Emergency Lights: ARMED & GUARDED
 - Window Heat: ON
+- Hydraulic C1/C2: ON
+- Hydraulic Switches: ALL AUTO
 - No Smoking: ON
 - Seatbelts: AUTO
 
@@ -61,7 +63,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - EICAS: RECALL & VERIFY
 - Thrust: IDLE
 - Squawk: SET
-- CHKL Pre-flight: COMPLETE
+- [CHKL](../assets/img/pmdg77x/chkl.png) Pre-flight: COMPLETE
 
 - (Note) Boarding & Refueling completed
 
@@ -77,9 +79,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - Ground Crew: ADVICE
 - APU: VERIFY ON
 - EXT POWER: OFF
-- Hydraulic C1/C2: ON
-- Hydraulic Switches: ALL AUTO
-- Fuel Pumps: L/R ON, CENTER AS ADV
+- Fuel Pumps: L/R ON; CENTER AS ADV
 - Beacon: ON
 - Transponder: XPNDR
 - Doors: CLOSED & ARMED
@@ -87,8 +87,10 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 
 ### Push and Engine Start
 
+- (Note) GE90: No Dual-Engine Start
 - Lower Center DIsplay: ENG PAGE
 - Parking Brake: OFF
+- [Autostart](../assets/img/pmdg77x/engine_autostart.png): ON; VERIFY
 - ENG L/R: START
 - Fuel Control 1/2: RUN
 - Oil Pressure: VERIFY RISING ELSE ABORT
@@ -101,7 +103,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - ENG A/I: AUTO
 - Flaps: TO
 - Flight Controls: CHECK
-- EICAS: RECALL & VERIFY
+- [EICAS](../assets/img/pmdg77x/recall.png): RECALL & VERIFY
 - (ATC) Request Taxi
 - CHKL Before Taxi: COMPLETE
 - Taxi Lights: ON
@@ -117,8 +119,8 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - Transponder / TCAS: TA/RA
 - WX Radar: ON
 - Terrain: AS REQ
-- A/T: ARMED
-- TO/GA: ARMED
+- [TFC](../assets/img/pmdg77x/tfc.png): PUSH
+- [A/T](../assets/img/pmdg77x/at_armed.png): VERIFY ARMED
 - Cabin: ADVICE
 - CHKL Before Takeoff: COMPLETE
 
@@ -132,6 +134,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 - (Note) Line up and Hold Brake
 - Throttle: 55% N1
 - Brakes: RELEASE
+- [TO/GA](../assets/img/pmdg77x/toga.png): PUSH
 - Airspeed alive: PITCH DOWN
 - 80knts: RELEASE YOKE
 - VR: ROTATE
@@ -161,7 +164,7 @@ AdaptedFrom: https://flightsim.to/file/76906/pmdg-boeing-777-checklist-procedure
 ## Cruise
 
 - HDG: SET
-- Step Climbs: CHECK OFP / VNAV
+- [Step Climbs](../assets/img/pmdg77x/stepclimb.png): CHECK OFP / VNAV
 
 # Descent
 
