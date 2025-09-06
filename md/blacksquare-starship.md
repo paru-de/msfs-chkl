@@ -363,11 +363,13 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - AP HDG: ON
 - (MCDU) NAV SOURCE (btn) → VOR
 - [CRS](../assets/img/blacksquare-starship/hdg_crs.png): SET RWY HDG
-- AP APPR: ON
-- PFD LOC; GS: VERIFY ARMED
+- AP NAV: ON
+- PFD LOC: VERIFY CAPTURED
 
 ### Glide Slope Intercept
 
+- AP APPR: ON
+- PFD GS: VERIFY CAPTURED
 - Flaps: DOWN
 - Landing Gear: DOWN
 - Propeller Sync: OFF
