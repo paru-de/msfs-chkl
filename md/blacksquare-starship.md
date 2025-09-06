@@ -214,7 +214,6 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - [Pressurization Altitude](../assets/img/blacksquare-starship/pressurization.png): 1000FT ABOVE CRZ
 - [Rate Knob](../assets/img/blacksquare-starship/pressurization.png): 10 O'CLOCK
 - [Manual Cabin Alt Control](../assets/img/blacksquare-starship/manual-cab.png): NORM (FULL CCW)
-- Avionics: CHECK AND SET
 - [AP](../assets/img/blacksquare-starship/ap-engage.png): ENGAGE
 - [AP Yoke D/C](../assets/img/blacksquare-starship/yoke-dc.png): PRESS
 - Pitch/Roll/Rudder Trims: CENTERED/GREEN
@@ -235,7 +234,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 
 - Bleed Air Valves: VERIFY BOTH
 - Transponder: ON
-- - (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → Set Radar 1/2
+- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → Set Radar 1/2
 - EICAS: VERIFY; CONSIDER
 - Engine Auto-Ignition: AS REQ
 - Generator Loads: CHECK
