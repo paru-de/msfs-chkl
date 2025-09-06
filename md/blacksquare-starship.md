@@ -1,7 +1,7 @@
 AircraftName: Beechcraft Starship (Blacksquare)
 AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipManual.pdf https://flightsim.to/file/94821/beech-starship-procedures-and-checklist
 
-- (Note) WORK IN PROGRESS: TYPOS, PICTURES, FMC FLOW
+- (Note) WORK IN PROGRESS: TYPOS, DIFFERENT APPROACHES
 
 # Cockpit preparations
 
@@ -12,158 +12,194 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Parking Brake: SET
 - Control Locks: REMOVE
 - Landing Gear: DOWN
-- Battery: ON
+- [Battery](../assets/img/blacksquare-starship/battery-master.png): ON
 - Pitch/Roll/Rudder Trim: NEUTRAL
-- Fuel Qty: CHECK
-- Oxygen Pressure: CHECK
-- Airstair Door Annunciator: CHECK
+- [Fuel Qty](../assets/img/blacksquare-starship/fuel-qty.png): CHECK
+- [Oxygen Pressure](../assets/img/blacksquare-starship/oxygen-pressure.png): CHECK
+- [Annunciators; Door](../assets/img/blacksquare-starship/door.png): CHECK
 - Battery: OFF
 - Chocks: REMOVED
 - Pitot/Static Covers: REMOVED
 - Engine Covers: REMOVED
 - Gear Locking Pins: REMOVED
 - Emergency Exit: SECURE
-- Airstair door: LOCKED
+- Door: LOCKED
 
 ## Before Starting Engine
 
-- Circuit Breakers (L/R/AUX): ALL IN
-- Outboard Reversionary Panels: AS REQ
+- [Circuit Breakers (L/R/AUX)](../assets/img/blacksquare-starship/circuit-breakers.png): ALL IN
+- [Outboard Reversionary Panels](../assets/img/blacksquare-starship/rev-panel.png): AS REQ
 - Parking Brake: SET
 - Audio Panels: AS REQ
-- Static Source: NORM
-- Oxygen Supply: PULL
-- Oxygen Masks: TEST
-- Ice Protection: OFF
+- [Static Source](../assets/img/blacksquare-starship/static-source.png): NORM
+- [Oxygen Supply](../assets/img/blacksquare-starship/oxygen-supply.png): PULL
+- [Oxygen Masks](../assets/img/blacksquare-starship/oxygen-mask-test.png): TEST
+- [Ice Protection](../assets/img/blacksquare-starship/ice-protections.png): OFF
 - Landing Gear: DOWN
-- Anti-Skid Switch: ANTI-SKID
-- Center Reversionary Panel: AS REQ
-- Standby Instruments: ON
-- STANDBY BATT PWR ON Annunciator: ILLUMINATED
+- [Anti-Skid](../assets/img/blacksquare-starship/anti-skid.png): ANTI-SKID
+- [Center Reversionary Panel](../assets/img/blacksquare-starship/center-rev-panel.png): AS REQ
+- [Standby Instruments](../assets/img/blacksquare-starship/standby-ind.png): ON
+- [STANDBY BATT PWR ON Annunciator](../assets/img/blacksquare-starship/standby-ind-ann.png): ILLUMINATED
 - Power Levers: IDLE
 - Propeller Levers: FULL FWD
 - Condition Levers: FUEL CUTOFF
-- Bleed Air Valves: OFF
-- Temp Mode: OFF
+- [Bleed Air Valves](../assets/img/blacksquare-starship/bleed-air-valve.png): OFF
+- [Temp Mode](../assets/img/blacksquare-starship/temp-mode.png): OFF
 
 ### Sys Tests
 
 - Battery: ON
-- Triple-Fed BUS Volts: 22V MIN
-- Center BUS Volts: 23V Min
-- EICAS: ON
-- Firewall Fuel Valves: PUSH CLOSED
+- [Triple-Fed BUS Volts](../assets/img/blacksquare-starship/trip-fed.png): 22V MIN
+- [Center BUS Volts](../assets/img/blacksquare-starship/ctr-bus.png): 23V Min
+- [EICAS](../assets/img/blacksquare-starship/eicas-switch.png): ON
+- [Firewall Fuel Valves](../assets/img/blacksquare-starship/firewall-fuel-closed.png): PUSH CLOSED
 - Extinguisher and F/W Valve: ILLUMINATED
-- Standby Pumps: ON
-- Fuel Press LO Annunciators: ILLUMINATED
+- [Standby Pumps](../assets/img/blacksquare-starship/stby-pumps.png): ON
+- Annunciator; Fuel Press LO: ILLUMINATED
 - Firewall Fuel Valves: PUSH OPEN
 - Extinguisher and F/W Valve: EXTINGUISHED
-- Fuel Press LO Annunciators: EXTINGUISHED
+- Annunciators; Fuel Press LO : EXTINGUISHED
 - Standby Pumps: OFF
-- Fuel Press LO Annunciators: ILLUMINATED
-- Transfer Flow: LEFT & RIGHT
-- FUEL TRANSFER Msg: ILLUMINATED
-- Fuel Press LO Annunciator: EXTINGUISHED
+- Annunciator; Fuel Press LO: ILLUMINATED
+- [Transfer Flow](../assets/img/blacksquare-starship/transfer-flow.png): LEFT & RIGHT
+- [EICAS; FUEL TRANSFER](../assets/img/blacksquare-starship/fuel-transfer-msg.png): ILLUMINATED
+- Annunciators; Fuel Press LO: EXTINGUISHED
 - Transfer Flow: OFF
-- AvIONIC AIR FAIL Msg: ILLUMINATED
-- Avionics Alternate Blower: ON
-- AV ALT BLWR ON Msg: ILLUMINATED
-- AVIONIC AIR FAIL Msg: EXTINGUISHED
+- EICAS; AVIONIC AIR FAIL: ILLUMINATED
+- [Avionics Alternate Blower](../assets/img/blacksquare-starship/avionics-alt-blow.png): ON
+- EICAS; AV ALT BLWR ON: ILLUMINATED
+- EICAS; AVIONIC AIR FAIL: EXTINGUISHED
 - Avionics Alternate Blower: OFF
-- Fuel Qty: CHECK
+- [Fuel Qty (total and aft)](../assets/img/blacksquare-starship/fuel-qty-aft.png): CHECK
 - Oxygen Pressure: CONFIRM
-- Lights: AS REQ
+- [Interior Lights](../assets/img/blacksquare-starship/lights.png): AS REQ
+- Exterior Lights: NAV
 
 # Engine Start
 
 ## Engine Start (BAT)
 
 - (Note) Right Engine first, then Left Engine
-- Strobes: LOW
-- R/L Ignition and Engine Start: ON
+- Strobe: LOW
+- [R/L Ignition and Engine Start](../assets/img/blacksquare-starship/eng-ign-start.png): ON
 - R/L Condition Lever (12% N1 min): START
-- R/L N1 and ITT (1000C max): MONITOR
-- R/L Oil Pressure: CONFIRM RISING ELSE ABORT
+- EICAS; R/L N1 and ITT (1000C max): MONITOR
+- EICAS; [R/L Oil Pressure](../assets/img/blacksquare-starship/oil-pres.png): CONFIRM RISING ELSE ABORT
 - R/L Ignition and Engine Start: OFF
 - R/L Condition Lever (65% N1 min): RUN
-- R/L Generator: RESET; ON
-- R/L Volts: 27.5-29V
-- Charge Battery until: LOADMETER < 50%
+- [R/L Generator](../assets/img/blacksquare-starship/eng-gen.png): RESET; ON
+- [R/L Volts](../assets/img/blacksquare-starship/r-gen.png): 27.5-29V
+- [Charge Battery until](../assets/img/blacksquare-starship/loadmeter.png): LOADMETER < 50%
 - (Note) Repeat for second Engine
-- Gen Ties: OPEN
-- L/R GEN TIES OPEN Msg: ILLUMINATED
-- Triple-Fed BUS Volts: 26.5-28V
+- [Gen Ties](../assets/img/blacksquare-starship/gen-ties.png): OPEN
+- EICAS; L/R GEN TIES OPEN: ILLUMINATED
+- Triple-Fed BUS: 26.5-28V
 - Gen Ties: NORM
-- L/R GEN TIES OPEN Msg: EXTINGUISHED
-- Generator Load: PARALLELED
+- EICAS; L/R GEN TIES OPEN: EXTINGUISHED
+- [Generator Load](../assets/img/blacksquare-starship/gen-load-paralleled.png): PARALLELED
 
 ## Engine Start (External Power)
 
 - (Note) Right Engine first, then Left Engine
-- Strobes: LOW
-- Battery Volts: 20V MIN
+- Strobe: LOW
+- [Battery Volts](../assets/img/blacksquare-starship/batt-volts.png): 20V MIN
 - Propeller Levers: FEATHER
 - EICAS Pilot and Copilot Avionics: OFF
-- L/R GEN: OFF
+- [R/L Generator](../assets/img/blacksquare-starship/eng-gen.png): OFF
 - Battery: ON
-- External Power Source: CONNECT
-- EXT PWR Volts: 28-28.4V
-- EXT PWR Switch: ON
+- (Tablet) Payload → Connect External Power
+- [EXT PWR Volts](../assets/img/blacksquare-starship/ext-pwr-volts.png): 28-28.4V
+- [EXT PWR Switch](../assets/img/blacksquare-starship/ext-pwr-switch.png): ON
 - EICAS: ON
-- R/L Ignition and Engine Start: ON
+- [R/L Ignition and Engine Start](../assets/img/blacksquare-starship/eng-ign-start.png): ON
 - R/L Condition Lever (12% N1 min): START
-- R/L N1 and ITT (1000C max): MONITOR
-- R/L Oil Pressure: CONFIRM RISING ELSE ABORT
+- EICAS; R/L N1 and ITT (1000C max): MONITOR
+- EICAS; [R/L Oil Pressure](../assets/img/blacksquare-starship/oil-pres.png): CONFIRM RISING ELSE ABORT
 - R/L Ignition and Engine Start: OFF
 - R/L Condition Lever (65% N1 min): RUN
 - (Note) Repeat for second Engine
 - EXT PWR: OFF
-- External Power Source: DISCONNECT
+- (Tablet) Payload → Disconnect External Power
 - R/L Generator: RESET; ON
-- R/L Volts: 27.5-29V
-- Gen Ties: NORM
-- L/R GEN TIES OPEN Msg: EXTINGUISHED
-- Generator Load: PARALLELED
+- [R/L Volts](../assets/img/blacksquare-starship/r-gen.png): 27.5-29V
+- [Gen Ties](../assets/img/blacksquare-starship/gen-ties.png): NORM
+- EICAS; L/R GEN TIES OPEN: EXTINGUISHED
+- [Generator Load](../assets/img/blacksquare-starship/gen-load-paralleled.png): PARALLELED
 - Propeller Levers: FULL FWD
+
+# Flight Plan / FMC Setup
+
+### Introduction
+
+- (Note) The Starship comes equipped with two means of navigation:
+- The FMC does not support GPS or SID/STAR's. Use [SimBrief's Legacy Algorithm](../assets/img/blacksquare-starship/simbrief-vor.png) to find a compatible route.
+- The [GNS 430](../assets/img/blacksquare-starship/gns430.png) supports GPS and SID/STAR's.
+- The GNS can be controlled by PMS5's free [GTN750 widget](../assets/img/blacksquare-starship/gns430-panel.png). You can download it by visiting pms50.com/msfs
+
+## Init
+
+- Pilot and Copilot Avionics: ON
+- (MCDU) CDU → INITIALIZE SYSTEM → ALL DATA OK
+- (MCDU) MSG (btn) → UPDATE VLF → UPDATE VLF FROM FMS
+- (MCDU) SYS CTRL (btn) → Verify AUTO LEG is active → Verify AP NAV SRC is FMS or GNS
+- (MCDU) NAV SOURCE (btn) → Verify FMS 1 or FMS 2
+- (ATC) Request clearance (IFR)
+
+### NAV DATA Update
+
+- (MCDU) [Insert floppy disk](../assets/img/blacksquare-starship/floppy.png)
+- (MCDU) UPDATE DATA BASE → Select FLIGHT DATA → CONTINUE
+
+## FMS-850
+
+- (Note) When using SimBrief VOR route
+- (Tablet) MSFS EFB → SimBrief Dispatch → VIEW → IMPORT ROUTE → FLT PLAN (btn)
+- (MCDU) Click Departure airport → REPLACE WPT → Enter departure airport → DISPLAY RUNWAYS
+- (MCDU) MFD Display → PLAN MAP → DISPLAY → Verify Route
+- (Note) When not using SimBrief
+- (MCDU) FLT PLAN → Click Screen to activate/deactivate hardware keyboard → Enter departure airport, waypoints, arrival airport → END FPL
+- (MCDU) (optional) FPL → APPR → Set Approach
+- (MCDU) MFD Display → PLAN MAP → DISPLAY → Verify Route
+- (Note) To delete a flight plan, click on any WPT and select ERASE FLPT
+- (MCDU) (optional) VNAV (btn) → Set altitudes (advisory only)
+
+## GNS
+
+- (Note) It is highly recommended to use the free GNT750 widget to set up the GNS
+- (MCDU) Open GNT 750 Widget
+- Flight Plan → MENU → Import → Import from SimBrief → Back
+- PROC → Departure → Select SID/TRANS → Load Departure → Back
+- (optional) PROC → Arrival → Select STAR/TRANS → Load Arrival → Back
+- (optional) PROC → Approach → Select runway → Load Approach → Back
+- Flight Plan → Verify RTE
 
 # Taxi, Takeoff
 
-- (ATC) Request Clearance (IFR)
-
 ## Before Taxi
 
-- Pilot and Copilot Avionics: ON
-- Standby Indicators: ON
+- Standby Indicators: VERIFY ON
 - Bleed Air Valves: BOTH
-- Blowers/Temperatur: SET
-- Temp Mode Selector: AUTO
-- Lights: AS REQ
+- [Blowers/Temperature](../assets/img/blacksquare-starship/blowers.png): SET
+- Temperature Mode Selector: AUTO
+- Exterior Lights: AS REQ
 - Cabin Lights: AS REQ
-- NO SMOKE/SEATBELTS: ON
+- No Smoke; Seatbelts: ON
 - Flight Controls: VERIFY FREE MOV
-- Flap/FWD Wing: RETRACT
-- AHRS ALIGNING Msg: EXTINGUISHED
+- [Flap/FWD Wing](../assets/img/blacksquare-starship/flap.png): RETRACT
+- EICAS; [AHRS ALIGNING](../assets/img/blacksquare-starship/ahrs-aligning.png): EXTINGUISHED
 - CDU Time and Date Position: VERIFY
-- Radar: STANDBY
+- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → STANDBY
 - Brakes: CHECKED
-- CAS: VERIFY / AFX OFF ONLY
-- Altimeter: SET LOCAL
-- Heading: SET RWY HDG
-- CDU: INIT
-- MSG: CHECK
-- Squawk: SET
+- EICAS: VERIFY / AFX OFF ONLY
+- [Altimeter](../assets/img/blacksquare-starship/baro.png): SET LOCAL
+- [Standby Altimeter](../assets/img/blacksquare-starship/baro_stby.png): SET LOCAL
+- [Heading](../assets/img/blacksquare-starship/hdg_crs.png): SET RWY HDG
+- [Squawk](../assets/img/blacksquare-starship/transponder.png): SET
 - Transponder: STBY
 - Nav Radios: AS REQ
-- Altitude: SET INITIAL CLEARANCE
-- Pitch/Roll/Rudder Trims: TO
-- Inertial Separators: MAIN; AS REQ
-
-### Flight Plan
-
-- (Tablet) MSFS EFB → Send to Avionics
-- (MCDU) FLP → VERIFY RTE
-- (MCDU) VNAV → SET AS REQ
-- (MCDU) SYS CTRL → VERIFY NAV SOURCE
+- [Altitude](../assets/img/blacksquare-starship/altitude.png): SET INITIAL CLEARANCE
+- [Pitch/Roll/Rudder Trims](../assets/img/blacksquare-starship/trim.png): TO
+- [Engine Ice Protection](../assets/img/blacksquare-starship/inertial-sep.png): MAIN; AS REQ
 
 ### Taxi
 
@@ -174,32 +210,38 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 ## Before Takeoff (Abbreviated)
 
 - Parking Brake: SET
-- Annunciators: PUSH TO TEST
-- Surface Deice / Ice Protection: AS REQ
-- Pressurization Altitude: 1000FT ABOVE CRZ
-- Rate Knob: 10 O'CLOCK
-- Manual Cabin Alt Control: NORM (FULL CCW)
+- [Annunciators](../assets/img/blacksquare-starship/annun.png): PUSH TO TEST
+- [Pressurization Altitude](../assets/img/blacksquare-starship/pressurization.png): 1000FT ABOVE CRZ
+- [Rate Knob](../assets/img/blacksquare-starship/pressurization.png): 10 O'CLOCK
+- [Manual Cabin Alt Control](../assets/img/blacksquare-starship/manual-cab.png): NORM (FULL CCW)
 - Avionics: CHECK AND SET
-- AP: ENGAGE
-- AP: YOKE D/C
-- Pitch/Roll/Rudder Trims: VERIFY TO
+- [AP](../assets/img/blacksquare-starship/ap-engage.png): ENGAGE
+- [AP Yoke D/C](../assets/img/blacksquare-starship/yoke-dc.png): PRESS
+- Pitch/Roll/Rudder Trims: CENTERED/GREEN
 - Flap/FWD WING: TO; AS REQ
-- Autofeather: ARMED
+- [Autofeather](../assets/img/blacksquare-starship/afx.png): ARMED
 - Altimeter: SET
 - Standby Altimeter: SET
-- Flight and Engine Displays: CHECK
-- Stall Warning Heat: ON
-- Pitot/Static Heat: ON
-- Engine Ice Protection: AS REQ
-- Vent/Cable Heat: ON
-- Windshield Heat: LOW
+
+### Anti-Ice / Heating
+
+- [Stall Warning Heat](../assets/img/blacksquare-starship/stall_warn.png): ON
+- [Pitot/Static Heat](../assets/img/blacksquare-starship/pitot_static.png): ON
+- [Engine Ice Protection](../assets/img/blacksquare-starship/inertial-sep.png): AS REQ
+- [Vent/Cable Heat](../assets/img/blacksquare-starship/ventcable.png): ON
+- [Windshield Heat](../assets/img/blacksquare-starship/windshield.png): LOW
+
+### Continued
+
 - Bleed Air Valves: VERIFY BOTH
 - Transponder: ON
-- CAS: VERIFY; CONSIDER
+- - (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → Set Radar 1/2
+- EICAS: VERIFY; CONSIDER
 - Engine Auto-Ignition: AS REQ
 - Generator Loads: CHECK
-- Pitch/Roll/Rudder Trims: CENTERED/GREEN
 - (ATC) Request Departure Clearance
+- Taxi Lights: OFF
+- Landing Lights: ON
 - Strobe: ANTI-COLL
 
 # Takeoff, Climb, Cruise
@@ -208,7 +250,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 
 - Brakes: HOLD
 - (Note) Takeoff Power: 100% TRQ, 850 ITT, 1700 RPM
-- AFX Msg: ILLUMINATED ON EICAS
+- EICAS; AFX: ILLUMINATED
 - Brakes: Release
 - VR No Flaps: 106 - 108 KIAS
 - VR Flaps: 91-101 KIAS
@@ -231,9 +273,11 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 
 - (Altitude) 400FT
 - Flap/FWD Wing: RETRACT
-- Yaw Damper: ON
+- [Yaw Damper](../assets/img/blacksquare-starship/yaw-damper.png): ON
+- AP: ENGAGE
+- [AP Controls](../assets/img/blacksquare-starship/ap-control.png): AS REQ
 - (Note) Climb Power: 90% TRQ, 840 ITT, 1600 RPM
-- Propeller Sync: ON
+- [Propeller Sync](../assets/img/blacksquare-starship/prop-sync.png): ON
 - (Note) Accelerate to desired climb speed
 
 ### Climb Speeds Reference
@@ -249,11 +293,10 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Engine Display: MONITOR
 - Cabin Pressurization: MONITOR
 - (Altitude) TRANSITION ALTITUDE
-- Altimeter: SET STD
+- Altimeter; Standby Altimeter: SET STD
 - (Altitude) FL100
 - Seatbelts: OFF
-- Lights: OFF
-- Inertial Separators: AS REQ
+- Landing Lights: OFF
 - Anti-Ice: AS REQ
 - Engine Auto Ignition: AS REQ
 
@@ -291,13 +334,12 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Rate Knob: AS REQ
 - (Altitude) FL100
 - Seatbelts: ON
-- Lights: ON
-- Inertial Separators: MAIN; AS REQ
+- Landing Lights: ON
 - Anti-Ice: AS REQ
 - Engine Auto Ignition: AS REQ
 - AFX: ARMED
-- ILS Frequency: CONFIRM
-- Terrain: ON; AS REQ
+- (MCDU) NAV (btn) → Confirm ILS Frequency
+- (MCDU) RDR CONTROL (btn) → GND MAP
 - (Altitude) TRANSITION ALTITUDE
 - Altimeter: SET LOCAL
 
@@ -316,10 +358,10 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Speed: 150-160 KIAS
 - Heading: SYNC
 - AP HDG: ON
-- (MCDU) Nav Source: VOR
-- CRS: SET RWY HDG
+- (MCDU) NAV SOURCE (btn) → VOR
+- [CRS](../assets/img/blacksquare-starship/hdg_crs.png): SET RWY HDG
 - AP APPR: ON
-- FMA LOC; GS: VERIFY ARMED
+- PFD LOC; GS: VERIFY ARMED
 
 ### Glide Slope Intercept
 
@@ -342,7 +384,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 ## Go Around
 
 - Power Levers: 100% TQ
-- GO-AROUND Button: PUSH
+- [GO-AROUND Button](../assets/img/blacksquare-starship/go-around.png): PUSH
 - VREF: ROTATE; MAINTAIN
 - Flaps: UP
 - Landing Gear: UP
@@ -353,32 +395,32 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 ## Taxi
 
 - (ATC) Report vacated
-- Lights: OFF
+- Landing Lights: OFF
 - Strobe: LOW; ANTI-COLL OFF
 - Taxi Lights: ON
 - Flaps: UP
-- Radar: OFF
+- (MCDU) RDR CONTROL (btn) → STBY
 - Transponder: STBY
 - AFX: OFF
 - Engine Auto Ignition: OFF
 - Stall Warning Heat: OFF
 - Pitot/Static Heat: OFF
-- Inertial Separators: AS REQ
 - Vent Cable Heat: OFF
 - Windshield Heat: OFF
+- Engine Anti-Ice: AS REQ
 
 ## Parking / Shutdown
 
 - Parking Brake: SET
 - Taxi Light: OFF
 - Oxygen Supply: PUSH IN
-- Inertial Separators: OFF
-- Anti-Ice: ALL OFF
+- Engine Anti-Ice: OFF
+- Anti-Ice: VERIFY ALL OFF
 - Pilot and Copilot Avionics: OFF
 - Standby Instruments: OFF
 - Bleed Air Valves: OFF
 - Temp Mode: OFF
-- Battery: CHARGED
+- [Battery](../assets/img/blacksquare-starship/loadmeter.png): CHARGED
 
 ### ITT at minimum for at least one minute
 
