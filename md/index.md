@@ -34,8 +34,8 @@ extension
 
 ## blacksquare-starship
 
-- name: Beechcraft Starship (Blacksquare)
-- keywords: beechcraft starship blacksquare 2000 STAR
+- name: Beechcraft Starship (Black Square)
+- keywords: beechcraft starship black square 2000 STAR
 
 # Business
 

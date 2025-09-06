@@ -1,4 +1,4 @@
-AircraftName: Beechcraft Starship (Blacksquare)
+AircraftName: Beechcraft Starship (Black Square)
 AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipManual.pdf https://flightsim.to/file/94821/beech-starship-procedures-and-checklist
 
 - (Note) WORK IN PROGRESS: TYPOS, DIFFERENT APPROACHES
@@ -280,6 +280,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 
 ### Climb Speeds Reference
 
+- (Note) AP IAS PROF can manage climb speeds automatically → [Speed bug](../assets/img/blacksquare-starship/speed-ref.png) 180 KIAS after takeoff
 - Max Rate: BLUE LINE + 10
 - B FL100: 180 KIAS
 - B FL200: 160 KIAS
@@ -297,6 +298,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Landing Lights: OFF
 - Anti-Ice: AS REQ
 - Engine Auto Ignition: AS REQ
+- (MCDU) RDR Control → GND off, WX+TURB on
 
 ## Cruise
 
