@@ -404,7 +404,6 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - Flaps: UP
 - (MCDU) RDR CONTROL (btn) → STBY
 - Transponder: STBY
-- AFX: OFF
 - Engine Auto Ignition: OFF
 - Stall Warning Heat: OFF
 - Pitot/Static Heat: OFF
@@ -416,6 +415,7 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 
 - Parking Brake: SET
 - Taxi Light: OFF
+- AFX: OFF
 - Oxygen Supply: PUSH IN
 - Engine Anti-Ice: OFF
 - Anti-Ice: VERIFY ALL OFF
