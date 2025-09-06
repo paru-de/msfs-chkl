@@ -320,8 +320,8 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 - (MCDU) FMS - FLT PLAN → APPR → Set APPR
 - (MCDU) GNS - PROC → Set ARRIVAL → Set APPROACH
 - (MCDU) VNAV → Set faf altitude (ILS); Set MDA (RNAV)
-- ILS Frequency: VERIFY & SET
-- Minimums: SET
+- (MCDU) NAV (btn) → Set ILS Frequency
+- [Minimums](../assets/img/blacksquare-starship/dh-minimum.png): SET
 - Target Altitude (faf/MDA): SET
 - Target VS (AP VS): SET
 - (Note) (optional) Add a ToD WPT to the FLT PLAN
