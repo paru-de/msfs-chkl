@@ -317,11 +317,16 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 ### 50nm before TOD
 
 - Approach: CHECK; REFER TO CHARTS
+- (MCDU) FMS - FLT PLAN → APPR → Set APPR
+- (MCDU) GNS - PROC → Set ARRIVAL → Set APPROACH
 - (MCDU) VNAV → Set faf altitude (ILS); Set MDA (RNAV)
 - ILS Frequency: VERIFY & SET
 - Minimums: SET
 - Target Altitude (faf/MDA): SET
 - Target VS (AP VS): SET
+- (Note) (optional) Add a ToD WPT to the FLT PLAN
+- (MCDU) FLT PLAN → Last WPT before TOD → INSERT WPT AFTER
+- (MCDU) (contd) MFU → PLAN MAP → DISPLAY → Use [cursor](../assets/img/blacksquare-starship/cursor.png) to measure distance → Press ENT on MFU Line Select
 
 ### ToD
 
