@@ -8,7 +8,6 @@ AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipMa
 ## Preflight
 
 - (Tablet) Payload → Set Fuel/Payload
-- (Tablet) MSFS EFB → Load flightplan
 - Parking Brake: SET
 - Control Locks: REMOVE
 - Landing Gear: DOWN
