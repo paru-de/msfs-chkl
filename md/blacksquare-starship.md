@@ -336,10 +336,10 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - Speed: MONITOR; ADJUST PWR
 - Pressurization Altitude: 500FT ABOVE LANDING
 - Rate Knob: AS REQ
+- Anti-Ice: AS REQ
 - (Altitude) FL100
 - Seatbelts: ON
 - Landing Lights: ON
-- Anti-Ice: AS REQ
 - Engine Auto Ignition: AS REQ
 - AFX: ARMED
 - (MCDU) NAV (btn) → Confirm ILS Frequency

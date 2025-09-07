@@ -18,7 +18,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 
 ## APU Start
 
-- [LH Fue Boost](../assets/img/flightfx-citationx/lh-fuel-boost.png): NORM
+- [LH Fuel Boost](../assets/img/flightfx-citationx/lh-fuel-boost.png): NORM
 - [APU Starter Disengage](../assets/img/flightfx-citationx/apu-starter-disengage.png): NORM
 - [APU Master](../assets/img/flightfx-citationx/apu-master.png): ON
 - [APU Test](../assets/img/flightfx-citationx/apu-test.png): PUSH
@@ -39,7 +39,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 - (Tablet) Ground Services → Remove Chocks → Close Main/Luggage Door → Remove Covers
 - EICAS: NO WARN
 - EICAS: Fuel: CHECK QTY
-- [CTR Winf Xfer](../assets/img/flightfx-citationx/ctr-wing-xfer.png): NORM; AS REQ
+- [CTR Wing Xfer](../assets/img/flightfx-citationx/ctr-wing-xfer.png): NORM; AS REQ
 
 ## FMC / Flight Plan
 
@@ -93,8 +93,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 
 - Flight Controls: VERIFY FREE MOV
 - Flaps: TO
-- Trim Flaps 5: -5 TO -2; DEP ON WEIGHT
-- Trim Flaps 15: -8 to -3.5; DEP ON WEIGHT
+- [Trim](../assets/img/flightfx-citationx/trim.png): TO; CENTERED GREEN
 - Speed Brake: VERIFY STOWED
 - AHRS: VERIFY ALIGNED
 - EICAS: VERIFY; CONSIDER
@@ -166,30 +165,29 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 
 ## Descent
 
-- (Note) 3 Degree Formula (nm): (CRZ Alt - Target Alt) / 1000 x 3 + 10-15
+- (MCDU) → PROG P2 → Check TOD
 
 ### 50nm before TOD
 
 - Approach: CHECK; REFER TO CHARTS
 - (MCDU) NAV → ARRIVAL → Confirm
 - (MCDU) PERF → LANDING → Set Temperature, Baro, Wind
-- (MCDU) NAV1 → Set/Confirm (ILS)
-- (MCDU) NAV (btn) → Set ILS Frequency
+- (MCDU) NAV → Set/Confirm (ILS)
 - [Minimums](../assets/img/flightfx-citationx/minimums.png): SET
 - Altitude: SET TARGET
+- AP VNAV: VERIFY SET
 
 ## ToD
 
 - (ATC) Clearance received
-- AP VNAV: VERIFY SET
 - Speed: MONITOR; ADJUST PWR
+- Anti-Ice: AS REQ
 - (Altitude) FL100
 - Seatbelts: ON
 - Landing Lights: ON
-- Anti-Ice: AS REQ
-- (MCDU) NAV1 → Set/Confirm (ILS)
 - (Altitude) TRANSITION ALTITUDE
 - Altimeter: SET LOCAL
+- [Pressurization](../assets/img/flightfx-citationx/press.png): CHECK; SET LANDING ALT
 
 # Approach
 
@@ -213,7 +211,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 
 - Landing Gear: DOWN
 - Flaps: FULL
-- Speed: VREF + 10 KIAS
+- Speed: VREF + 5 KIAS
 - (Altitude) Before or at 200ft
 - AP: OFF
 - (Altitude) 20-30FT
