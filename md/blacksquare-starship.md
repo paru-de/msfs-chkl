@@ -314,7 +314,6 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 
 - (Note) Normal Descent profile: 4 Degrees!
 - (Note) 4 Degree Formula (nm): (CRZ Alt - Target Alt) / 1000 x 2.5 + 10-15
-- (Note) → Remove 0's from delta, times 2 + half of that + buffer
 
 ### 50nm before TOD
 
@@ -348,7 +347,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - (Altitude) TRANSITION ALTITUDE
 - Altimeter: SET LOCAL
 
-## Approach
+# Approach
 
 ### Approach Speed Reference
 
