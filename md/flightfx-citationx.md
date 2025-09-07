@@ -51,7 +51,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 - (ATC) Request clearance (IFR)
 - (MCDU) (manual entry) FPL → Enter ORIGIN, DEST, Enroute WPT, Finalize Flight Plan
 - (Note) Enter airways in format aw.wpt (f.e. UL612.HON)
-- (MCDU) NAV → DEPARTUE → Enter RWY, SID/TRANS → ACTIVATE
+- (MCDU) NAV → DEPARTURE → Enter RWY, SID/TRANS → ACTIVATE
 - (MCDU) (optional) NAV → ARRIVAL → Enter RWY, STAR/TRANS
 - (MCDU) [MFD Map → SKP/RCL](../assets/img/flightfx-citationx/mdf-map.png)
 - (MCDU) (contd) FPL → NEXT/PREV → Confirm RTE
