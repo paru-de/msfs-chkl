@@ -50,6 +50,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 - (Note) As of 09/2025 SimBrief imports will sometimes fail and get stuck on REQ PENDING when Navigraph data is installed. No workaround exists.
 - (ATC) Request clearance (IFR)
 - (MCDU) (manual entry) FPL → Enter ORIGIN, DEST, Enroute WPT, Finalize Flight Plan
+- (Note) Enter airways in format aw.wpt (f.e. UL612.HON)
 - (MCDU) NAV → DEPARTUE → Enter RWY, SID/TRANS → ACTIVATE
 - (MCDU) (optional) NAV → ARRIVAL → Enter RWY, STAR/TRANS
 - (MCDU) [MFD Map → SKP/RCL](../assets/img/flightfx-citationx/mdf-map.png)
