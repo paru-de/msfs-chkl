@@ -1,5 +1,5 @@
 AircraftName: Beechcraft Starship (Black Square)
-AdaptedFrom: https://downloads.justflight.com/products/JFF003744/BKSQ_StarshipManual.pdf https://flightsim.to/file/94821/beech-starship-procedures-and-checklist
+AdaptedFrom: https://support.justflight.com/support/solutions/articles/17000146911-black-square-starship-msfs-manual https://flightsim.to/file/94821/beech-starship-procedures-and-checklist
 
 - (Note) WORK IN PROGRESS: TYPOS, DIFFERENT APPROACHES
 
