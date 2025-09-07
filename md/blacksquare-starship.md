@@ -381,10 +381,10 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - (Altitude) Before or at 200ft
 - AP: OFF
 - Yaw Damper: OFF
-- (Altitude) 50FT
+- (Altitude) 20-30FT
 - Power Levers: IDLE
 - (Altitude) 10FT
-- Flare: 3-5 DEGREE
+- Flare: 2-3 DEGREE
 - (Altitude) TOUCHDOWN
 - Power Levers: BETA RANGE; REV AS REQ
 
