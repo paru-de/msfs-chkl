@@ -33,7 +33,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - [Static Source](../assets/img/blacksquare-starship/static-source.png): NORM
 - [Oxygen Supply](../assets/img/blacksquare-starship/oxygen-supply.png): PULL
 - [Oxygen Masks](../assets/img/blacksquare-starship/oxygen-mask-test.png): TEST
-- [Ice Protection](../assets/img/blacksquare-starship/ice-protections.png): OFF
+- [Ice Protection](../assets/img/blacksquare-starship/ice-protections.png): ALL OFF
 - Landing Gear: DOWN
 - [Anti-Skid](../assets/img/blacksquare-starship/anti-skid.png): ANTI-SKID
 - [Center Reversionary Panel](../assets/img/blacksquare-starship/center-rev-panel.png): AS REQ
@@ -182,46 +182,59 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - Temperature Mode Selector: AUTO
 - Exterior Lights: AS REQ
 - Cabin Lights: AS REQ
-- No Smoke; Seatbelts: ON
+- Seatbelts: ON
 - Flight Controls: VERIFY FREE MOV
-- [Flap/FWD Wing](../assets/img/blacksquare-starship/flap.png): RETRACT
-- EICAS; [AHRS ALIGNING](../assets/img/blacksquare-starship/ahrs-aligning.png): EXTINGUISHED
-- CDU Time and Date Position: VERIFY
-- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → STANDBY
 - Brakes: CHECKED
+- EICAS; [AHRS ALIGNING](../assets/img/blacksquare-starship/ahrs-aligning.png): EXTINGUISHED
 - EICAS: VERIFY / AFX OFF ONLY
+- CDU Time and Date Position: VERIFY
+
+### Avionics
+
 - [Altimeter](../assets/img/blacksquare-starship/baro.png): SET LOCAL
 - [Standby Altimeter](../assets/img/blacksquare-starship/baro_stby.png): SET LOCAL
 - [Heading](../assets/img/blacksquare-starship/hdg_crs.png): SET RWY HDG
+- [Altitude](../assets/img/blacksquare-starship/altitude.png): SET INITIAL CLEARANCE
+- [Speed Bug](../assets/img/blacksquare-starship/speed-ref.png): 180 KIAS
+
+### Continued
+
 - [Squawk](../assets/img/blacksquare-starship/transponder.png): SET
 - Transponder: STBY
 - Nav Radios: AS REQ
-- [Altitude](../assets/img/blacksquare-starship/altitude.png): SET INITIAL CLEARANCE
+- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) STANDBY
 - [Pitch/Roll/Rudder Trims](../assets/img/blacksquare-starship/trim.png): TO
+- [Flap/FWD Wing](../assets/img/blacksquare-starship/flap.png): RETRACT
 - [Engine Ice Protection](../assets/img/blacksquare-starship/inertial-sep.png): MAIN; AS REQ
+- [AFX](../assets/img/blacksquare-starship/afx.png): ARMED
 
 ### Taxi
 
 - (ATC) Request Taxi Clearance
 - Taxi Lights: ON
-- Parking Brake: OFF
 
 ## Before Takeoff (Abbreviated)
 
 - Parking Brake: SET
 - [Annunciators](../assets/img/blacksquare-starship/annun.png): PUSH TO TEST
+- Pitch/Roll/Rudder Trims: CENTERED/GREEN
+- Flap/FWD WING: TO; AS REQ
+
+### Pressurization
+
 - [Pressurization Altitude](../assets/img/blacksquare-starship/pressurization.png): 1000FT ABOVE CRZ
 - [Rate Knob](../assets/img/blacksquare-starship/pressurization.png): 10 O'CLOCK
 - [Manual Cabin Alt Control](../assets/img/blacksquare-starship/manual-cab.png): NORM (FULL CCW)
+- Bleed Air Valves: VERIFY BOTH
+
+### Avionics
+
 - [AP](../assets/img/blacksquare-starship/ap-engage.png): ENGAGE
 - [AP Yoke D/C](../assets/img/blacksquare-starship/yoke-dc.png): PRESS
-- Pitch/Roll/Rudder Trims: CENTERED/GREEN
-- Flap/FWD WING: TO; AS REQ
-- [Autofeather](../assets/img/blacksquare-starship/afx.png): ARMED
-- Altimeter: SET
-- Standby Altimeter: SET
+- Altimeter: VERIFY LOCAL
+- Standby Altimeter: VERIFY LOCAL
 
-### Anti-Ice / Heating
+### Ice Protection
 
 - [Stall Warning Heat](../assets/img/blacksquare-starship/stall_warn.png): ON
 - [Pitot/Static Heat](../assets/img/blacksquare-starship/pitot_static.png): ON
@@ -229,15 +242,17 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - [Vent/Cable Heat](../assets/img/blacksquare-starship/ventcable.png): ON
 - [Windshield Heat](../assets/img/blacksquare-starship/windshield.png): LOW
 
-### Continued
+### Verify
 
-- Bleed Air Valves: VERIFY BOTH
 - Transponder: ON
-- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) → Set Radar 1/2
-- EICAS: VERIFY; CONSIDER
+- (MCDU) [RDR CONTROL (btn)](../assets/img/blacksquare-starship/rdr.png) GND/WX (AS REQ)
 - Engine Auto-Ignition: AS REQ
 - Generator Loads: CHECK
+- EICAS: VERIFY; CONSIDER
 - (ATC) Request Departure Clearance
+
+### Line-up
+
 - Taxi Lights: OFF
 - Landing Lights: ON
 - Strobe: ANTI-COLL
@@ -280,7 +295,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 
 ### Climb Speeds Reference
 
-- (Note) AP IAS PROF can manage climb speeds automatically → [Speed bug](../assets/img/blacksquare-starship/speed-ref.png) 180 KIAS after takeoff
+- (Note) AP IAS PROF can manage climb speeds automatically
 - Max Rate: BLUE LINE + 10
 - B FL100: 180 KIAS
 - B FL200: 160 KIAS
@@ -296,7 +311,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - (Altitude) FL100
 - Seatbelts: OFF
 - Landing Lights: OFF
-- Anti-Ice: AS REQ
+- Ice Protection: AS REQ
 - Engine Auto Ignition: AS REQ
 - (MCDU) RDR Control → GND off, WX+TURB on
 
@@ -324,10 +339,6 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - (MCDU) NAV (btn) → Set ILS Frequency
 - [Minimums](../assets/img/blacksquare-starship/dh-minimum.png): SET
 - Target Altitude (faf/MDA): SET
-- Target VS (AP VS): SET
-- (Note) (optional) Add a ToD WPT to the FLT PLAN
-- (MCDU) FLT PLAN → Last WPT before TOD → INSERT WPT AFTER
-- (MCDU) (contd) MFU → PLAN MAP → DISPLAY → Use [cursor](../assets/img/blacksquare-starship/cursor.png) to measure distance → Press ENT on MFU Line Select
 
 ### ToD
 
@@ -336,7 +347,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - Speed: MONITOR; ADJUST PWR
 - Pressurization Altitude: 500FT ABOVE LANDING
 - Rate Knob: AS REQ
-- Anti-Ice: AS REQ
+- Ice Protection: AS REQ
 - (Altitude) FL100
 - Seatbelts: ON
 - Landing Lights: ON
@@ -373,10 +384,10 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - PFD GS: VERIFY CAPTURED
 - Flaps: DOWN
 - Landing Gear: DOWN
-- Propeller Sync: OFF
-- AFX: VERIFY ARMED
 - Speed: VREF + 10 KIAS
+- AFX: VERIFY ARMED
 - Propeller Lever: MAX RPM
+- - Propeller Sync: OFF
 - (Altitude) Before or at 200ft
 - AP: OFF
 - Yaw Damper: OFF
@@ -421,7 +432,7 @@ AdaptedFrom: https://support.justflight.com/support/solutions/articles/170001469
 - AFX: OFF
 - Oxygen Supply: PUSH IN
 - Engine Anti-Ice: OFF
-- Anti-Ice: VERIFY ALL OFF
+- Ice Protection: VERIFY ALL OFF
 - Pilot and Copilot Avionics: OFF
 - Standby Instruments: OFF
 - Bleed Air Valves: OFF
