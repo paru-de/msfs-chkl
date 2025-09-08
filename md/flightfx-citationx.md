@@ -1,7 +1,7 @@
 AircraftName: Cessna Citation X (FlightFX)
 AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-checklist https://drive.google.com/drive/folders/1NWuKPU2KJW3FDMpQ7VqQ52-mh8H1-SVS
 
-- (Note) Work in progress: Typos, Flow, Pictures
+- (Note) Work in progress: Typos, Flow. Paused until Navigraph conflicts are resolved by devs.
 
 # Cockpit preparations
 
@@ -47,10 +47,11 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 
 - (MCDU) POS INIT → GPS 1 POS → LOAD
 - (MCDU) NAV → SIMBRIEF → FPLN RECALL
-- (Note) As of 09/2025 SimBrief imports will sometimes fail and get stuck on REQ PENDING when Navigraph data is installed. No workaround exists.
+- (Note) As of 09/2025 SimBrief imports will sometimes fail and get stuck on REQ PENDING when Navigraph data is installed. No workaround other than uninstalling Navigraph data exists.
 - (ATC) Request clearance (IFR)
 - (MCDU) (manual entry) FPL → Enter ORIGIN, DEST, Enroute WPT, Finalize Flight Plan
 - (Note) Enter airways in format aw.wpt (f.e. UL612.HON)
+- (Note) As of 09/2025 manual entry of WPT's when Navigraph data is installed will often fail due to unrecognized waypoints. No workaround other than uninstalling Navigraph data exists.
 - (MCDU) NAV → DEPARTURE → Enter RWY, SID/TRANS → ACTIVATE
 - (MCDU) (optional) NAV → ARRIVAL → Enter RWY, STAR/TRANS
 - (MCDU) [MFD Map → SKP/RCL](../assets/img/flightfx-citationx/mdf-map.png)
@@ -96,7 +97,7 @@ AdaptedFrom: https://flightsim.to/file/95515/cessna-citation-x-c750-normal-check
 - Flaps: TO
 - [Trim](../assets/img/flightfx-citationx/trim.png): TO; CENTERED GREEN
 - Speed Brake: VERIFY STOWED
-- AHRS: VERIFY ALIGNED
+- IRS: VERIFY ALIGNED
 - EICAS: VERIFY; CONSIDER
 - Engine [Anti-Ice](../assets/img/flightfx-citationx/anti-ice.png): AS REQ
 - [Pressurization Alt Sel](../assets/img/flightfx-citationx/prs-alt.png): NORM
