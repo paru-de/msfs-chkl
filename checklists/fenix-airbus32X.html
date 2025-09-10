@@ -8,9 +8,6 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
-
-
-
 </head>
 
 <body>
@@ -34,9 +31,9 @@
       <div class="aircraft-name">Fenix Airbus A32x</div>
   </div>
 
-  <!-- Info Box + AdaptedFrom flex container -->
+  <!-- Swatches + AdaptedFrom -->
   
-<div class="info-box-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+<div class="metadata-bar">
     <div class="info-box">
         <div><span class="swatch altitude"></span>Altitude</div>
         <div><span class="swatch note"></span>Notes</div>
@@ -44,13 +41,13 @@
         <div><span class="swatch mcdu"></span>MCDU/FMC</div>
         <div><span class="swatch atc"></span>ATC</div>
     </div>
-    <div>Adapted from <a href="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist" target="_blank" class="adapted-link" title="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist">1️⃣</a></div>
+    <div><a href="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist" target="_blank" class="adapted-link" title="https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-checklist">1️⃣</a></div>
 </div>
 
 
   <!-- Categories -->
   <div class="categories">
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Cockpit Preparations </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Cockpit Preparations</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Power Up & Overhead</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li class="info-box tablet-box">Fenix → My Flight → Import from Simbrief</li>
 <div class="divider">Verify</div>
@@ -109,7 +106,7 @@
 <li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">SET INITIAL CLEARANCE</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push & Taxi, Line-up and Takeoff </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Push & Taxi, Line-up and Takeoff</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Push</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Prepare Push</div>
 <li><div class="checklist-item"><span class="item-left">Transponder</span><span class="item-right">AUTO</span></div></li>
@@ -158,7 +155,7 @@
 <li><div class="checklist-item"><span class="item-left">Nose Lights</span><span class="item-right">TO</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>After Takeoff, Climb, Cruise </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>After Takeoff, Climb, Cruise</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">After Takeoff</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Positive Rate of Climb</div>
 <li><div class="checklist-item"><span class="item-left">Landing Gear</span><span class="item-right">UP</span></div></li>
@@ -185,7 +182,7 @@
 <li><div class="checklist-item"><span class="item-left">Step Climbs (LR/Neo)</span><span class="item-right">CHECK OFP</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Descent </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Descent</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Before Top of Descent</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Landing calculations</div>
 <li class="info-box mcdu-box">INIT → WIND → WIND REQUEST → WIND → UPLINK INSERT</li>
@@ -197,7 +194,7 @@
 <li class="info-box mcdu-box">PERF P3 → Enter QNH, TEMP, WINDS, TRANS FL, BARO/RADIO, LDG CONF</li>
 <li><div class="checklist-item"><span class="item-left">Autobrake</span><span class="item-right">SET</span></div></li>
 <li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">PRE-SELECT LOCAL</span></div></li>
-<li class="info-box note-box">: If LDG CONF 3: GPWS OVERHEAD PANEL → LDG FLAP 3 ON</li>
+<li class="info-box note-box">If LDG CONF 3: GPWS OVERHEAD PANEL → LDG FLAP 3 ON</li>
 <div class="divider">Descent</div>
 <li class="info-box atc-box">Clearance received</li>
 <li><div class="checklist-item"><span class="item-left">Altitude</span><span class="item-right">SET; MANAGED</span></div></li>
@@ -216,7 +213,7 @@
 <li><div class="checklist-item"><span class="item-left">Altimeter</span><span class="item-right">SWITCH LOCAL</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Approach </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Approach</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">ILS</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <div class="divider">Decel point</div>
 <li class="info-box mcdu-box">PERF → APPR → Activate → Confirm</li>
@@ -260,7 +257,7 @@
 <li><div class="checklist-item"><span class="item-left">RWY TURN OFF Lights</span><span class="item-right">OFF</span></div></li>
 </ul></div></div>
 </div></div>
-<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Shutdown </span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
+<div class="category"><div class="category-header" onclick="toggleCategory(this)"><span>Shutdown</span><i class="fas fa-chevron-down"></i></div><div class="checklist-items">
 <div class="checklist"><div class="checklist-header" onclick="toggleChecklist(this)"><span class="checklist-title">Taxi</span><i class="fas fa-chevron-down checklist-icon"></i></div><div class="checklist-content"><ul>
 <li class="info-box atc-box">Report vacated</li>
 <li><div class="checklist-item"><span class="item-left">Strobe</span><span class="item-right">OFF</span></div></li>
@@ -307,6 +304,8 @@
     <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Aircraft List</a>
     <div class="aircraft-name">Fenix Airbus A32x</div>
 </div>
+
+<div class="image-tooltip" id="image-tooltip"></div>
 
 <script src="../assets/js/script.js"></script>
 </body>

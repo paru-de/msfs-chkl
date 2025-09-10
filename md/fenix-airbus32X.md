@@ -180,7 +180,7 @@ AdaptedFrom: https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-chec
 - (MCDU) PERF P3 → Enter QNH, TEMP, WINDS, TRANS FL, BARO/RADIO, LDG CONF
 - Autobrake: SET
 - Altimeter: PRE-SELECT LOCAL
-- (Note): If LDG CONF 3: GPWS OVERHEAD PANEL → LDG FLAP 3 ON
+- (Note) If LDG CONF 3: GPWS OVERHEAD PANEL → LDG FLAP 3 ON
 
 ### Descent
 
