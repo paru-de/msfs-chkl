@@ -215,9 +215,9 @@ AdaptedFrom: https://flightsim.to/file/90077/fenix-a319-a320-a321-essential-chec
 - Flaps: 1
 - (Note) Wait for Speed S
 - (ATC) Clearance received
-- LOC and GS: CONFIRM ACTIVE
 - APPR: ON
 - AP2: ON
+- LOC and GS: CONFIRM ACTIVE
 
 ### LOC and GS captured
 
